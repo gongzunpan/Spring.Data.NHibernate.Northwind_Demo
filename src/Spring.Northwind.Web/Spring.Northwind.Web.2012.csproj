@@ -118,7 +118,9 @@
     <Content Include="Img\springNet_release.png" />
     <Content Include="Logs\log.txt" />
     <Content Include="Web.config" />
-    <Content Include="Web.xml" />
+    <Content Include="Web.xml">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CustomerEditor.aspx.designer.cs">

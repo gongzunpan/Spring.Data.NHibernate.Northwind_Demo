@@ -12,9 +12,9 @@
   </object>
 
   <!-- Database Configuration -->
-  <db:provider id="DbProvider"
-                   provider="SQLite-1.0.65"
-                   connectionString="Data Source=|DataDirectory|Northwind.db;Version=3;FailIfMissing=True;"/>
+	<db:provider id="DbProvider"
+					 provider="System.Data.SqlClient"
+					 connectionString="Data Source=GONGZUNPAN1\GONGZUNPAN;Database=Northwind;User ID=sa;Password=gongzunpan123;Trusted_Connection=False"/>
 
   <!-- NHibernate Configuration -->
   <object id="NHibernateSessionFactory" type="Spring.Northwind.Dao.NHibernate.CustomLocalSessionFactoryObject, Spring.Northwind.Dao.NHibernate">
@@ -27,8 +27,8 @@
     <property name="HibernateProperties">
       <dictionary>
         <entry key="hibernate.connection.provider" value="NHibernate.Connection.DriverConnectionProvider"/>
-        <entry key="dialect" value="NHibernate.Dialect.SQLiteDialect"/>
-        <entry key="connection.driver_class" value="NHibernate.Driver.SQLite20Driver"/>
+        <entry key="dialect" value="NHibernate.Dialect.MsSql2008Dialect"/>
+        <entry key="connection.driver_class" value="NHibernate.Driver.SqlClientDriver"/>
         <entry key="use_proxy_validator" value="false" />
         <entry key="show_sql" value="false"/>
         <entry key="format_sql" value="true"/>
