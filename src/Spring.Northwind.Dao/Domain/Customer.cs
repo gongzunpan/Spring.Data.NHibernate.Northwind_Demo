@@ -27,7 +27,7 @@ namespace Spring.Northwind.Domain
     /// <summary>
     /// Customer entity. We 
     /// </summary>
-    public class Customer : ICustomer
+    public class Customer
     {
         #region Fields
 
@@ -51,81 +51,81 @@ namespace Spring.Northwind.Domain
 
         #region Properties
 
-        public string Id
+        public virtual string Id
         {
             get { return id; }
             set { id = value; }
         }
 
-        public string CompanyName
+        public virtual string CompanyName
         {
             get { return companyName; }
             set { companyName = value; }
         }
 
-        public string ContactName
+        public virtual string ContactName
         {
             get { return contactName; }
             set { contactName = value; }
         }
 
-        public string ContactTitle
+        public virtual string ContactTitle
         {
             get { return contactTitle; }
             set { contactTitle = value; }
         }
 
-        public string Address
+        public virtual string Address
         {
             get { return address; }
             set { address = value; }
         }
 
-        public string City
+        public virtual string City
         {
             get { return city; }
             set { city = value; }
         }
 
-        public string Region
+        public virtual string Region
         {
             get { return region; }
             set { region = value; }
         }
 
-        public string PostalCode
+        public virtual string PostalCode
         {
             get { return postalCode; }
             set { postalCode = value; }
         }
 
-        public string Country
+        public virtual string Country
         {
             get { return country; }
             set { country = value; }
         }
 
-        public string Phone
+        public virtual string Phone
         {
             get { return phone; }
             set { phone = value; }
         }
 
-        public string Fax
+        public virtual string Fax
         {
             get { return fax; }
             set { fax = value; }
         }
 
-        public ReadOnlyCollection<Order> Orders
+        public virtual IList<Order> Orders
         {
             get
             {
-                return new ReadOnlyCollection<Order>(orders ?? new List<Order>(0));
+                return new List<Order>(orders ?? new List<Order>(0));
             }
         }
 
-        public string Classification
+        public virtual string Classification
         {
             get { return calculator.CalculateClassification(this);  }
         }
@@ -133,6 +133,8 @@ namespace Spring.Northwind.Domain
         #endregion
 
         #region Constructor (s)
+
+        public Customer(){ }
 
         public Customer(ICustomerClassificationCalculator calculator)
         {

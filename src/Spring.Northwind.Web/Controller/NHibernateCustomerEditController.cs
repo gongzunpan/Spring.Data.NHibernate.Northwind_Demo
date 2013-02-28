@@ -38,6 +38,7 @@ public class NHibernateCustomerEditController : ICustomerEditController
 			
 			//since the Customer entity may have been retrieved from a prior request, we need to reattach it to the current session
 			// in order to support lazy-loading, etc. on the Customer
+            if (customer!=null)
             Session.Lock(customer, LockMode.None);
             
 			return customer;

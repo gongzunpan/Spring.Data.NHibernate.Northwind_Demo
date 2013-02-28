@@ -2,6 +2,7 @@ using NHibernate;
 using Spring.Data.NHibernate;
 using Spring.Northwind.Domain;
 
+
 /// <summary>
 /// </summary>
 /// <author>erich.eichinger</author>
