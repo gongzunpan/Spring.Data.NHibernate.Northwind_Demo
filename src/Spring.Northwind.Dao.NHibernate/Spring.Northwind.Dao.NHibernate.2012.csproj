@@ -95,16 +95,14 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Mappings\CustomerMap.cs" />
+    <Compile Include="Mappings\OrderDetailMap.cs" />
+    <Compile Include="Mappings\OrderMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Mappings\Order.hbm.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Mappings\OrderDetail.hbm.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Dao\Dao.xml" />
+    <EmbeddedResource Include="Dao\Dao.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">

@@ -1,4 +1,0 @@
-2013-02-28 20:25:29,752 [15] DEBUG Spring.Data.NHibernate.SessionFactoryUtils [(null)] - Closing Hibernate Session
-2013-02-28 20:25:29,917 [15] DEBUG Spring.Data.NHibernate.Support.SessionScope+LazySessionHolder [(null)] - Closed LazySessionHolder
-2013-02-28 20:43:54,272 [23] DEBUG Spring.Context.Support.WebSupportModule [(null)] - end session jntmrffrwgk4vwgltqdavwmrv because of Removed
-2013-02-28 20:43:54,275 [23] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - disposing 'session'-scoped item cache

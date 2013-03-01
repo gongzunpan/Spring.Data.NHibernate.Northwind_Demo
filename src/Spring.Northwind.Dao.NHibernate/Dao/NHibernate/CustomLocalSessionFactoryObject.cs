@@ -38,17 +38,9 @@ namespace Spring.Northwind.Dao.NHibernate
         {
             base.PostProcessConfiguration(config);
             FluentConfiguration fluentConfig = Fluently.Configure(config);
-            Array.ForEach(MappingAssemblies, assembly => fluentConfig.Mappings(m => m.HbmMappings.AddFromAssembly(Assembly.Load(assembly))));
+           // Array.ForEach(MappingAssemblies, assembly => fluentConfig.Mappings(m => m.HbmMappings.AddFromAssembly(Assembly.Load(assembly))));
             Array.ForEach(MappingAssemblies, assembly => fluentConfig.Mappings(m => m.FluentMappings.AddFromAssembly(Assembly.Load(assembly))));
             fluentConfig.BuildSessionFactory();
-
-
-  //          var sessionFactory = Fluently.Configure(config).Mappings(m =>{
-  //              m.HbmMappings.AddFromAssembly(Assembly.Load(assembly));
-  //              m.FluentMappings.AddFromAssembly(Assembly.Load(assembly));
-  //             m.AutoMappings.Add(AutoMap.AssemblyOf<YourEntity>(type => type.Namespace.EndsWith("Entities")));
-  //})
-  //.BuildSessionFactory();
         }
     }
 }
