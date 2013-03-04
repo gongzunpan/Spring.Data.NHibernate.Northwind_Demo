@@ -40,14 +40,11 @@
   </object>
 
   <!-- Transaction Management Strategy - local database transactions -->
-  <object id="transactionManager"
-        type="Spring.Data.NHibernate.HibernateTransactionManager, Spring.Data.NHibernate32">
-
-    <property name="DbProvider" ref="DbProvider"/>
-    <property name="SessionFactory" ref="NHibernateSessionFactory"/>
-
-  </object>
-
+	<object id="transactionManager"
+		 type="Spring.Data.NHibernate.HibernateTransactionManager, Spring.Data.NHibernate33">
+		<property name="DbProvider" ref="DbProvider"/>
+		<property name="SessionFactory" ref="NHibernateSessionFactory"/>
+	</object>
   <!-- Exception translation object post processor -->
   <object type="Spring.Dao.Attributes.PersistenceExceptionTranslationPostProcessor, Spring.Data"/>
 

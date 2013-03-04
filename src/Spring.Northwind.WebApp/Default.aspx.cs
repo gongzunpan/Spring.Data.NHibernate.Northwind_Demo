@@ -20,7 +20,7 @@ namespace Spring.Northwind.WebApp
         {
            IList<Customer> list=this.customerDao.GetAll();
 
-            Response.Write("customerDao.GetAll() Count is " + list.Count);
+            Response.Write("spring.net IOC 测试 customerDao.GetAll() Count is " + list.Count);
         }
        
     }

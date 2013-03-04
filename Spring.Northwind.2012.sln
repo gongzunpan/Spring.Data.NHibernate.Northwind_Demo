@@ -17,7 +17,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spring.Northwind.WebApp", "
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebSite", "WebSite", "{7B7AE8ED-DBE4-4CA4-9531-215535B63B8A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spring.Northwind.MvcApp", "src\Spring.Northwind.MvcApp\Spring.Northwind.MvcApp.csproj", "{52A29C44-4286-40BA-96C9-E016399957ED}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spring.Northwind.MvcApp", "src\Spring.Northwind.MvcApp\Spring.Northwind.MvcApp.csproj", "{69056607-6910-4E55-919A-567E3B944CCF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -99,25 +99,25 @@ Global
 		{2A7681BA-5C3C-4CC5-BE79-FE9FB428C764}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2A7681BA-5C3C-4CC5-BE79-FE9FB428C764}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{2A7681BA-5C3C-4CC5-BE79-FE9FB428C764}.Release|Mixed Platforms.Build.0 = Release|Any CPU
-		{52A29C44-4286-40BA-96C9-E016399957ED}.Debug|.NET.ActiveCfg = Debug|Any CPU
-		{52A29C44-4286-40BA-96C9-E016399957ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{52A29C44-4286-40BA-96C9-E016399957ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{52A29C44-4286-40BA-96C9-E016399957ED}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{52A29C44-4286-40BA-96C9-E016399957ED}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
-		{52A29C44-4286-40BA-96C9-E016399957ED}.Release|.NET.ActiveCfg = Release|Any CPU
-		{52A29C44-4286-40BA-96C9-E016399957ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{52A29C44-4286-40BA-96C9-E016399957ED}.Release|Any CPU.Build.0 = Release|Any CPU
-		{52A29C44-4286-40BA-96C9-E016399957ED}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{52A29C44-4286-40BA-96C9-E016399957ED}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{69056607-6910-4E55-919A-567E3B944CCF}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{69056607-6910-4E55-919A-567E3B944CCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69056607-6910-4E55-919A-567E3B944CCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69056607-6910-4E55-919A-567E3B944CCF}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{69056607-6910-4E55-919A-567E3B944CCF}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{69056607-6910-4E55-919A-567E3B944CCF}.Release|.NET.ActiveCfg = Release|Any CPU
+		{69056607-6910-4E55-919A-567E3B944CCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69056607-6910-4E55-919A-567E3B944CCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69056607-6910-4E55-919A-567E3B944CCF}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{69056607-6910-4E55-919A-567E3B944CCF}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{2967CA64-7352-46E3-89C0-6BB3A0A13FC1} = {7B7AE8ED-DBE4-4CA4-9531-215535B63B8A}
 		{8EEAB62E-DBAF-4C5F-9906-77B2A817F945} = {7B7AE8ED-DBE4-4CA4-9531-215535B63B8A}
 		{2A7681BA-5C3C-4CC5-BE79-FE9FB428C764} = {7B7AE8ED-DBE4-4CA4-9531-215535B63B8A}
-		{52A29C44-4286-40BA-96C9-E016399957ED} = {7B7AE8ED-DBE4-4CA4-9531-215535B63B8A}
+		{2967CA64-7352-46E3-89C0-6BB3A0A13FC1} = {7B7AE8ED-DBE4-4CA4-9531-215535B63B8A}
+		{69056607-6910-4E55-919A-567E3B944CCF} = {7B7AE8ED-DBE4-4CA4-9531-215535B63B8A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		NAntAddinLastFileName = 

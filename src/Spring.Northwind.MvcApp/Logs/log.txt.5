@@ -1,0 +1,563 @@
+2013-03-04 18:43:13,002 [24] ERROR NHibernate.Cfg.Configuration [(null)] - Could not compile the mapping document: (XmlDocument)
+NHibernate.MappingException: Could not compile the mapping document: (XmlDocument) ---> NHibernate.HibernateException: Could not instantiate dialect class NHibernate.Dialect.MsSql2008Dialect ---> Spring.Core.CannotLoadObjectTypeException: Cannot resolve type [Spring.Northwind.Dao.CustomerDao] for object with name 'Spring.Northwind.Dao.CustomerDao#0' defined in file [D:\GitHub\Spring.Data.NHibernate.Northwind_Demo\src\Spring.Northwind.MvcApp\Web.xml] line 9 ---> System.TypeLoadException: Could not load type from string value 'Spring.Northwind.Dao.CustomerDao'.
+   在 Spring.Core.TypeResolution.TypeResolver.Resolve(String typeName) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Core\TypeResolution\TypeResolver.cs:行号 83
+   在 Spring.Core.TypeResolution.GenericTypeResolver.Resolve(String typeName) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Core\TypeResolution\GenericTypeResolver.cs:行号 91
+   在 Spring.Core.TypeResolution.CachedTypeResolver.Resolve(String typeName) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Core\TypeResolution\CachedTypeResolver.cs:行号 107
+   在 Spring.Core.TypeResolution.TypeResolutionUtils.ResolveType(String typeName) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Core\TypeResolution\TypeResolutionUtils.cs:行号 101
+   在 Spring.Objects.Factory.Support.AbstractObjectDefinition.ResolveObjectType() 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectDefinition.cs:行号 706
+   在 Spring.Objects.Factory.Support.AbstractObjectFactory.ResolveObjectType(RootObjectDefinition rod, String objectName) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:行号 1215
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Spring.Objects.Factory.Support.AbstractObjectFactory.ResolveObjectType(RootObjectDefinition rod, String objectName) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:行号 1223
+   在 Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory.PredictObjectType(String objectName, RootObjectDefinition mod) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\AbstractAutowireCapableObjectFactory.cs:行号 160
+   在 Spring.Objects.Factory.Support.DefaultListableObjectFactory.DoGetObjectNamesForType(Type type, Boolean includeNonSingletons, Boolean allowEagerInit) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\DefaultListableObjectFactory.cs:行号 1050
+   在 Spring.Objects.Factory.Support.DefaultListableObjectFactory.GetObjectNamesForType(Type type) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\DefaultListableObjectFactory.cs:行号 670
+   在 Spring.Context.Support.AbstractApplicationContext.GetObjectNamesForType(Type type) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Context\Support\AbstractApplicationContext.cs:行号 1234
+   在 Spring.Data.NHibernate.Bytecode.ObjectsFactory.CreateInstance(Type type) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Data.NHibernate\Data\NHibernate\Bytecode\ObjectsFactory.cs:行号 57
+   在 NHibernate.Dialect.Dialect.InstantiateDialect(String dialectName)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 NHibernate.Dialect.Dialect.InstantiateDialect(String dialectName)
+   在 NHibernate.Dialect.Dialect.GetDialect(IDictionary`2 props)
+   在 NHibernate.Cfg.Configuration.AddDeserializedMapping(HbmMapping mappingDocument, String documentFileName)
+   --- 内部异常堆栈跟踪的结尾 ---
+2013-03-04 18:43:13,013 [24] ERROR Spring.Objects.Factory.Support.WebObjectFactory [(null)] -    GetObjectInternal: error obtaining object &NHibernateSessionFactory
+2013-03-04 18:43:13,013 [24] ERROR Spring.Objects.Factory.Support.WebObjectFactory [(null)] - GetObjectInternal: error obtaining object Spring.Dao.Attributes.PersistenceExceptionTranslationPostProcessor#0
+2013-03-04 18:43:13,014 [24] ERROR Spring.Context.Support.WebApplicationContext [(null)] - failed creating context 'spring.root', Stacktrace:
+   在 Spring.Context.Support.WebApplicationContext.GetContextInternal(String virtualPath)
+   在 Spring.Context.Support.WebApplicationContext.GetRootContext()
+   在 Spring.Context.Support.WebSupportModule.Init(HttpApplication app)
+   在 System.Web.HttpApplication.InitModulesCommon()
+   在 System.Web.HttpApplication.InitModules()
+   在 System.Web.HttpApplication.InitInternal(HttpContext context, HttpApplicationState state, MethodInfo[] handlers)
+   在 System.Web.HttpApplicationFactory.GetNormalApplicationInstance(HttpContext context)
+   在 System.Web.HttpApplicationFactory.GetApplicationInstance(HttpContext context)
+   在 System.Web.HttpRuntime.ProcessRequestInternal(HttpWorkerRequest wr)
+   在 System.Web.HttpRuntime.ProcessRequestNoDemand(HttpWorkerRequest wr)
+   在 System.Web.Hosting.ISAPIRuntime.ProcessRequest(IntPtr ecb, Int32 iWRType)
+   在 System.Web.Hosting.ISAPIRuntime.System.Web.Hosting.IISAPIRuntime2.ProcessRequest(IntPtr ecb, Int32 iWRType)
+
+System.Configuration.ConfigurationErrorsException: Error creating context 'spring.root': Could not load type from string value 'Spring.Northwind.Dao.CustomerDao'. ---> Spring.Objects.Factory.ObjectCreationException: Error creating object with name 'NHibernateSessionFactory' defined in 'assembly [Spring.Northwind.Dao.NHibernate, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null], resource [Spring.Northwind.Dao.Dao.xml] line 21' : Initialization of object failed : An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+  * Database was not configured through Database method.
+ ---> FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+  * Database was not configured through Database method.
+ ---> FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+  * Database was not configured through Database method.
+ ---> NHibernate.MappingException: Could not compile the mapping document: (XmlDocument) ---> NHibernate.HibernateException: Could not instantiate dialect class NHibernate.Dialect.MsSql2008Dialect ---> Spring.Core.CannotLoadObjectTypeException: Cannot resolve type [Spring.Northwind.Dao.CustomerDao] for object with name 'Spring.Northwind.Dao.CustomerDao#0' defined in file [D:\GitHub\Spring.Data.NHibernate.Northwind_Demo\src\Spring.Northwind.MvcApp\Web.xml] line 9 ---> System.TypeLoadException: Could not load type from string value 'Spring.Northwind.Dao.CustomerDao'.
+   在 Spring.Core.TypeResolution.TypeResolver.Resolve(String typeName) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Core\TypeResolution\TypeResolver.cs:行号 83
+   在 Spring.Core.TypeResolution.GenericTypeResolver.Resolve(String typeName) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Core\TypeResolution\GenericTypeResolver.cs:行号 91
+   在 Spring.Core.TypeResolution.CachedTypeResolver.Resolve(String typeName) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Core\TypeResolution\CachedTypeResolver.cs:行号 107
+   在 Spring.Core.TypeResolution.TypeResolutionUtils.ResolveType(String typeName) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Core\TypeResolution\TypeResolutionUtils.cs:行号 101
+   在 Spring.Objects.Factory.Support.AbstractObjectDefinition.ResolveObjectType() 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectDefinition.cs:行号 706
+   在 Spring.Objects.Factory.Support.AbstractObjectFactory.ResolveObjectType(RootObjectDefinition rod, String objectName) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:行号 1215
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Spring.Objects.Factory.Support.AbstractObjectFactory.ResolveObjectType(RootObjectDefinition rod, String objectName) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:行号 1223
+   在 Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory.PredictObjectType(String objectName, RootObjectDefinition mod) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\AbstractAutowireCapableObjectFactory.cs:行号 160
+   在 Spring.Objects.Factory.Support.DefaultListableObjectFactory.DoGetObjectNamesForType(Type type, Boolean includeNonSingletons, Boolean allowEagerInit) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\DefaultListableObjectFactory.cs:行号 1050
+   在 Spring.Objects.Factory.Support.DefaultListableObjectFactory.GetObjectNamesForType(Type type) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\DefaultListableObjectFactory.cs:行号 670
+   在 Spring.Context.Support.AbstractApplicationContext.GetObjectNamesForType(Type type) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Context\Support\AbstractApplicationContext.cs:行号 1234
+   在 Spring.Data.NHibernate.Bytecode.ObjectsFactory.CreateInstance(Type type) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Data.NHibernate\Data\NHibernate\Bytecode\ObjectsFactory.cs:行号 57
+   在 NHibernate.Dialect.Dialect.InstantiateDialect(String dialectName)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 NHibernate.Dialect.Dialect.InstantiateDialect(String dialectName)
+   在 NHibernate.Dialect.Dialect.GetDialect(IDictionary`2 props)
+   在 NHibernate.Cfg.Configuration.AddDeserializedMapping(HbmMapping mappingDocument, String documentFileName)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 NHibernate.Cfg.Configuration.LogAndThrow(Exception exception)
+   在 NHibernate.Cfg.Configuration.AddDeserializedMapping(HbmMapping mappingDocument, String documentFileName)
+   在 NHibernate.Cfg.Configuration.AddValidatedDocument(NamedXmlDocument doc)
+   在 NHibernate.Cfg.Configuration.ProcessMappingsQueue()
+   在 NHibernate.Cfg.Configuration.AddDocumentThroughQueue(NamedXmlDocument document)
+   在 NHibernate.Cfg.Configuration.AddXmlReader(XmlReader hbmReader, String name)
+   在 NHibernate.Cfg.Configuration.AddInputStream(Stream xmlInputStream, String name)
+   在 NHibernate.Cfg.Configuration.AddDocument(XmlDocument doc, String name)
+   在 NHibernate.Cfg.Configuration.AddDocument(XmlDocument doc)
+   在 FluentNHibernate.PersistenceModel.Configure(Configuration cfg) 位置 d:\BuildAgent-01\work\3fc77865051739a6\src\FluentNHibernate\PersistenceModel.cs:行号 292
+   在 FluentNHibernate.Cfg.MappingConfiguration.Apply(Configuration cfg) 位置 d:\BuildAgent-01\work\3fc77865051739a6\src\FluentNHibernate\Cfg\MappingConfiguration.cs:行号 87
+   在 FluentNHibernate.Cfg.FluentConfiguration.BuildConfiguration() 位置 d:\BuildAgent-01\work\3fc77865051739a6\src\FluentNHibernate\Cfg\FluentConfiguration.cs:行号 249
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 FluentNHibernate.Cfg.FluentConfiguration.BuildConfiguration() 位置 d:\BuildAgent-01\work\3fc77865051739a6\src\FluentNHibernate\Cfg\FluentConfiguration.cs:行号 262
+   在 FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory() 位置 d:\BuildAgent-01\work\3fc77865051739a6\src\FluentNHibernate\Cfg\FluentConfiguration.cs:行号 230
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory() 位置 d:\BuildAgent-01\work\3fc77865051739a6\src\FluentNHibernate\Cfg\FluentConfiguration.cs:行号 233
+   在 Spring.Northwind.Dao.NHibernate.CustomLocalSessionFactoryObject.PostProcessConfiguration(Configuration config) 位置 d:\GitHub\Spring.Data.NHibernate.Northwind_Demo\src\Spring.Northwind.Dao.NHibernate\Dao\NHibernate\CustomLocalSessionFactoryObject.cs:行号 43
+   在 Spring.Data.NHibernate.LocalSessionFactoryObject.AfterPropertiesSet() 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Data.NHibernate\Data\NHibernate\LocalSessionFactoryObject.cs:行号 662
+   在 Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory.InvokeInitMethods(Object target, String name, IConfigurableObjectDefinition definition) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\AbstractAutowireCapableObjectFactory.cs:行号 1319
+   在 Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory.ConfigureObject(String name, RootObjectDefinition definition, IObjectWrapper wrapper) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\AbstractAutowireCapableObjectFactory.cs:行号 1872
+   在 Spring.Objects.Factory.Support.WebObjectFactory.ConfigureObject(String name, RootObjectDefinition definition, IObjectWrapper wrapper) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Web\Objects\Factory\Support\WebObjectFactory.cs:行号 450
+   在 Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory.InstantiateObject(String name, RootObjectDefinition definition, Object[] arguments, Boolean allowEagerCaching, Boolean suppressConfigure) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\AbstractAutowireCapableObjectFactory.cs:行号 946
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory.InstantiateObject(String name, RootObjectDefinition definition, Object[] arguments, Boolean allowEagerCaching, Boolean suppressConfigure) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\AbstractAutowireCapableObjectFactory.cs:行号 963
+   在 Spring.Objects.Factory.Support.AbstractObjectFactory.CreateAndCacheSingletonInstance(String objectName, RootObjectDefinition objectDefinition, Object[] arguments) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:行号 2429
+   在 Spring.Objects.Factory.Support.WebObjectFactory.CreateAndCacheSingletonInstance(String objectName, RootObjectDefinition objectDefinition, Object[] arguments) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Web\Objects\Factory\Support\WebObjectFactory.cs:行号 299
+   在 Spring.Objects.Factory.Support.AbstractObjectFactory.GetObjectInternal(String name, Type requiredType, Object[] arguments, Boolean suppressConfigure) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:行号 2322
+   在 Spring.Objects.Factory.Support.DefaultListableObjectFactory.DoGetObjectsOfType(Type type, Boolean includePrototypes, Boolean includeFactoryObjects, IDictionary resultCollector) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\DefaultListableObjectFactory.cs:行号 884
+   在 Spring.Objects.Factory.Support.DefaultListableObjectFactory.GetObjectsOfType(Type type, Boolean includePrototypes, Boolean includeFactoryObjects) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\DefaultListableObjectFactory.cs:行号 853
+   在 Spring.Objects.Factory.ObjectFactoryUtils.ObjectsOfTypeIncludingAncestors(IListableObjectFactory factory, Type type, Boolean includePrototypes, Boolean includeFactoryObjects) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\ObjectFactoryUtils.cs:行号 252
+   在 Spring.Dao.Support.PersistenceExceptionTranslationInterceptor.DetectPersistenceExceptionTranslators(IListableObjectFactory objectFactory) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Data\Dao\Support\PersistenceExceptionTranslationInterceptor.cs:行号 156
+   在 Spring.Dao.Attributes.PersistenceExceptionTranslationAdvisor..ctor(IListableObjectFactory objectFactory, Type repositoryAttributeType) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Data\Dao\Attributes\PersistenceExceptionTranslationAdvisor.cs:行号 63
+   在 Spring.Dao.Attributes.PersistenceExceptionTranslationPostProcessor.set_ObjectFactory(IObjectFactory value) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Data\Dao\Attributes\PersistenceExceptionTranslationPostProcessor.cs:行号 95
+   在 Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory.ConfigureObject(String name, RootObjectDefinition definition, IObjectWrapper wrapper) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\AbstractAutowireCapableObjectFactory.cs:行号 1868
+   在 Spring.Objects.Factory.Support.WebObjectFactory.ConfigureObject(String name, RootObjectDefinition definition, IObjectWrapper wrapper) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Web\Objects\Factory\Support\WebObjectFactory.cs:行号 450
+   在 Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory.InstantiateObject(String name, RootObjectDefinition definition, Object[] arguments, Boolean allowEagerCaching, Boolean suppressConfigure) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\AbstractAutowireCapableObjectFactory.cs:行号 955
+   在 Spring.Objects.Factory.Support.AbstractObjectFactory.CreateAndCacheSingletonInstance(String objectName, RootObjectDefinition objectDefinition, Object[] arguments) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:行号 2429
+   在 Spring.Objects.Factory.Support.WebObjectFactory.CreateAndCacheSingletonInstance(String objectName, RootObjectDefinition objectDefinition, Object[] arguments) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Web\Objects\Factory\Support\WebObjectFactory.cs:行号 299
+   在 Spring.Objects.Factory.Support.AbstractObjectFactory.GetObjectInternal(String name, Type requiredType, Object[] arguments, Boolean suppressConfigure) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:行号 2322
+   在 Spring.Objects.Factory.Support.DefaultListableObjectFactory.DoGetObjectsOfType(Type type, Boolean includePrototypes, Boolean includeFactoryObjects, IDictionary resultCollector) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\DefaultListableObjectFactory.cs:行号 884
+   在 Spring.Objects.Factory.Support.DefaultListableObjectFactory.GetObjects[T](Boolean includePrototypes, Boolean includeFactoryObjects) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\DefaultListableObjectFactory.cs:行号 919
+   在 Spring.Context.Support.AbstractApplicationContext.GetObjects[T](Boolean includePrototypes, Boolean includeFactoryObjects) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Context\Support\AbstractApplicationContext.cs:行号 1507
+   在 Spring.Context.Support.AbstractApplicationContext.RegisterObjectPostProcessors(IConfigurableListableObjectFactory objectFactory) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Context\Support\AbstractApplicationContext.cs:行号 648
+   在 Spring.Context.Support.AbstractApplicationContext.Refresh() 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Context\Support\AbstractApplicationContext.cs:行号 994
+   在 Spring.Context.Support.WebApplicationContext..ctor(WebApplicationContextArgs args) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Web\Context\Support\WebApplicationContext.cs:行号 125
+   在 _dynamic_Spring.Context.Support.WebApplicationContext..ctor(Object[] )
+   在 Spring.Reflection.Dynamic.SafeConstructor.Invoke(Object[] arguments) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Reflection\Dynamic\DynamicConstructor.cs:行号 113
+   在 Spring.Context.Support.ContextHandler.RootContextInstantiator.InvokeContextConstructor(ConstructorInfo ctor) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Context\Support\ContextHandler.cs:行号 562
+   在 Spring.Context.Support.ContextHandler.ContextInstantiator.InstantiateContext() 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Context\Support\ContextHandler.cs:行号 507
+   在 Spring.Context.Support.ContextHandler.InstantiateContext(IApplicationContext parentContext, Object configContext, String contextName, Type contextType, Boolean caseSensitive, IList`1 resources) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Context\Support\ContextHandler.cs:行号 343
+   在 Spring.Context.Support.WebContextHandler.InstantiateContext(IApplicationContext parent, Object configContext, String contextName, Type contextType, Boolean caseSensitive, IList`1 resources) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Web\Context\Support\WebContextHandler.cs:行号 121
+   在 Spring.Context.Support.ContextHandler.Create(Object parent, Object configContext, XmlNode section) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Context\Support\ContextHandler.cs:行号 288
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Configuration.BaseConfigurationRecord.EvaluateOne(String[] keys, SectionInput input, Boolean isTrusted, FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult)
+   在 System.Configuration.BaseConfigurationRecord.Evaluate(FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult, Boolean getLkg, Boolean getRuntimeObject, Object& result, Object& resultRuntimeObject)
+   在 System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   在 System.Configuration.BaseConfigurationRecord.GetSection(String configKey)
+   在 System.Web.HttpContext.GetSection(String sectionName)
+   在 System.Web.Configuration.HttpConfigurationSystem.GetSection(String sectionName)
+   在 System.Web.Configuration.HttpConfigurationSystem.System.Configuration.Internal.IInternalConfigSystem.GetSection(String configKey)
+   在 System.Configuration.ConfigurationManager.GetSection(String sectionName)
+   在 Spring.Util.ConfigurationUtils.GetSection(String sectionName) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Util\ConfigurationUtils.cs:行号 68
+   在 Spring.Context.Support.WebApplicationContext.GetContextInternal(String virtualPath) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Web\Context\Support\WebApplicationContext.cs:行号 306
+2013-03-04 18:44:37,704 [21] DEBUG Spring.Context.Support.WebSupportModule [(null)] - Initializing Application instance
+2013-03-04 18:44:37,704 [21] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - looking up web context 'spring.root' in WebContextCache
+2013-03-04 18:44:37,704 [21] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - looking up web context 'spring.root' in ContextRegistry
+2013-03-04 18:44:37,704 [21] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - web context for vpath 'spring.root' not found. Force creation using filepath '/dummy.context'
+2013-03-04 18:44:37,705 [21] DEBUG Spring.Context.Support.ContextHandler [(null)] - creating context 'spring.root'
+2013-03-04 18:44:37,705 [21] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - ApplicationContext Refresh: Refreshing object factory 
+2013-03-04 18:44:37,705 [21] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionReader [(null)] - Loading XML object definitions from assembly [Spring.Northwind.Dao.NHibernate, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null], resource [Spring.Northwind.Dao.Dao.xml]
+2013-03-04 18:44:37,706 [21] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionReader [(null)] - Using the following XmlReader implementation : System.Xml.XsdValidatingReader
+2013-03-04 18:44:37,706 [21] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader [(null)] - Loading object definitions.
+2013-03-04 18:44:37,707 [21] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Loading object definitions...
+2013-03-04 18:44:37,707 [21] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Default lazy init 'false'.
+2013-03-04 18:44:37,708 [21] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Default dependency check 'none'.
+2013-03-04 18:44:37,708 [21] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Default autowire 'no'.
+2013-03-04 18:44:37,708 [21] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Default merge 'false'.
+2013-03-04 18:44:37,709 [21] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Default init method ''.
+2013-03-04 18:44:37,709 [21] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Default destroy method ''.
+2013-03-04 18:44:37,710 [21] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Default autowire candidates ''.
+2013-03-04 18:44:37,710 [21] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Default init method ''.
+2013-03-04 18:44:37,711 [21] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Default destroy method ''.
+2013-03-04 18:44:37,711 [21] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Neither XML 'id' nor 'name' specified - using generated object name [Spring.Objects.Factory.Config.PropertyPlaceholderConfigurer#0]
+2013-03-04 18:44:37,713 [21] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader [(null)] - Registering object definition with id 'Spring.Objects.Factory.Config.PropertyPlaceholderConfigurer#0'.
+2013-03-04 18:44:37,713 [21] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Registering alias 'Spring.Objects.Factory.Config.PropertyPlaceholderConfigurer' for object with name 'Spring.Objects.Factory.Config.PropertyPlaceholderConfigurer#0'.
+2013-03-04 18:44:37,714 [21] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader [(null)] - Registering object definition with id 'NHibernateSessionFactory'.
+2013-03-04 18:44:37,715 [21] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader [(null)] - Registering object definition with id 'transactionManager'.
+2013-03-04 18:44:37,715 [21] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Neither XML 'id' nor 'name' specified - using generated object name [Spring.Dao.Attributes.PersistenceExceptionTranslationPostProcessor#0]
+2013-03-04 18:44:37,716 [21] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader [(null)] - Registering object definition with id 'Spring.Dao.Attributes.PersistenceExceptionTranslationPostProcessor#0'.
+2013-03-04 18:44:37,716 [21] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Registering alias 'Spring.Dao.Attributes.PersistenceExceptionTranslationPostProcessor' for object with name 'Spring.Dao.Attributes.PersistenceExceptionTranslationPostProcessor#0'.
+2013-03-04 18:44:37,717 [21] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader [(null)] - Registering object definition with id 'CustomerDao'.
+2013-03-04 18:44:37,717 [21] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader [(null)] - Registering object definition with id 'OrderDao'.
+2013-03-04 18:44:37,718 [21] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader [(null)] - Registering object definition with id 'CustomerClassificationCalculator'.
+2013-03-04 18:44:37,718 [21] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader [(null)] - Registering object definition with id 'CustomerEntityProtoType'.
+2013-03-04 18:44:37,719 [21] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader [(null)] - Found 9 <object> elements defining objects.
+2013-03-04 18:44:37,719 [21] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionReader [(null)] - Loaded 9 object definitions from location [assembly://Spring.Northwind.Dao.NHibernate/Spring.Northwind.Dao/Dao.xml]
+2013-03-04 18:44:37,719 [21] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionReader [(null)] - Loading XML object definitions from assembly [Spring.Northwind.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null], resource [Spring.Northwind.Service.Services.xml]
+2013-03-04 18:44:37,720 [21] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionReader [(null)] - Using the following XmlReader implementation : System.Xml.XsdValidatingReader
+2013-03-04 18:44:37,720 [21] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader [(null)] - Loading object definitions.
+2013-03-04 18:44:37,721 [21] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Loading object definitions...
+2013-03-04 18:44:37,721 [21] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Default lazy init 'false'.
+2013-03-04 18:44:37,722 [21] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Default dependency check 'none'.
+2013-03-04 18:44:37,722 [21] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Default autowire 'no'.
+2013-03-04 18:44:37,722 [21] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Default merge 'false'.
+2013-03-04 18:44:37,723 [21] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Default init method ''.
+2013-03-04 18:44:37,723 [21] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Default destroy method ''.
+2013-03-04 18:44:37,724 [21] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Default autowire candidates ''.
+2013-03-04 18:44:37,724 [21] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Default init method ''.
+2013-03-04 18:44:37,725 [21] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Default destroy method ''.
+2013-03-04 18:44:37,725 [21] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader [(null)] - Registering object definition with id 'FulfillmentService'.
+2013-03-04 18:44:37,726 [21] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader [(null)] - Registering object definition with id 'ShippingService'.
+2013-03-04 18:44:37,726 [21] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader [(null)] - Found 15 <object> elements defining objects.
+2013-03-04 18:44:37,727 [21] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionReader [(null)] - Loaded 6 object definitions from location [assembly://Spring.Northwind.Service/Spring.Northwind.Service/Services.xml]
+2013-03-04 18:44:37,727 [21] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionReader [(null)] - Loading XML object definitions from file [D:\GitHub\Spring.Data.NHibernate.Northwind_Demo\src\Spring.Northwind.MvcApp\Web.xml]
+2013-03-04 18:44:37,729 [21] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionReader [(null)] - Using the following XmlReader implementation : System.Xml.XsdValidatingReader
+2013-03-04 18:44:37,729 [21] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader [(null)] - Loading object definitions.
+2013-03-04 18:44:37,730 [21] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Loading object definitions...
+2013-03-04 18:44:37,730 [21] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Default lazy init 'false'.
+2013-03-04 18:44:37,731 [21] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Default dependency check 'none'.
+2013-03-04 18:44:37,731 [21] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Default autowire 'no'.
+2013-03-04 18:44:37,731 [21] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Default merge 'false'.
+2013-03-04 18:44:37,732 [21] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Default init method ''.
+2013-03-04 18:44:37,732 [21] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Default destroy method ''.
+2013-03-04 18:44:37,733 [21] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Default autowire candidates ''.
+2013-03-04 18:44:37,733 [21] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Default init method ''.
+2013-03-04 18:44:37,733 [21] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Default destroy method ''.
+2013-03-04 18:44:37,734 [21] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Neither XML 'id' nor 'name' specified - using generated object name [Spring.Northwind.MvcApp.Controllers.HomeController#0]
+2013-03-04 18:44:37,735 [21] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader [(null)] - Registering object definition with id 'Spring.Northwind.MvcApp.Controllers.HomeController#0'.
+2013-03-04 18:44:37,735 [21] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Registering alias 'Spring.Northwind.MvcApp.Controllers.HomeController' for object with name 'Spring.Northwind.MvcApp.Controllers.HomeController#0'.
+2013-03-04 18:44:37,736 [21] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader [(null)] - Found 16 <object> elements defining objects.
+2013-03-04 18:44:37,736 [21] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionReader [(null)] - Loaded 1 object definitions from location [~/Web.xml]
+2013-03-04 18:44:37,737 [21] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - Refreshed ObjectFactory for application context 'spring.root'.
+2013-03-04 18:44:37,737 [21] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - ApplicationContext Refresh: Registering well-known processors and objects
+2013-03-04 18:44:37,737 [21] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - ApplicationContext Refresh: Custom post processing object factory
+2013-03-04 18:44:37,738 [21] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - ApplicationContext Refresh: Post processing object factory using pre-registered processors
+2013-03-04 18:44:37,738 [21] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - 16 objects defined in application context [spring.root].
+2013-03-04 18:44:37,738 [21] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - ApplicationContext Refresh: Post processing object factory using defined processors
+2013-03-04 18:44:37,739 [21] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] -    GetObjectInternal: obtaining instance for name Spring.Objects.Factory.Config.PropertyPlaceholderConfigurer#0 => canonical name Spring.Objects.Factory.Config.PropertyPlaceholderConfigurer#0
+2013-03-04 18:44:37,740 [21] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Creating shared instance of singleton object 'Spring.Objects.Factory.Config.PropertyPlaceholderConfigurer#0'
+2013-03-04 18:44:37,740 [21] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Creating instance of Object 'Spring.Objects.Factory.Config.PropertyPlaceholderConfigurer#0' with merged definition [Root web object with class [Spring.Objects.Factory.Config.PropertyPlaceholderConfigurer] defined in assembly [Spring.Northwind.Dao.NHibernate, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null], resource [Spring.Northwind.Dao.Dao.xml] line 11].
+2013-03-04 18:44:37,741 [21] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Invoking IInstantiationAwareObjectPostProcessors before the instantiation of 'Spring.Objects.Factory.Config.PropertyPlaceholderConfigurer#0'.
+2013-03-04 18:44:37,741 [21] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Eagerly caching object 'Spring.Objects.Factory.Config.PropertyPlaceholderConfigurer#0' to allow for resolving potential circular references
+2013-03-04 18:44:37,741 [21] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Configuring object using definition 'Spring.Objects.Factory.Config.PropertyPlaceholderConfigurer#0'
+2013-03-04 18:44:37,742 [21] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Invoking IObjectPostProcessors before initialization of object 'Spring.Objects.Factory.Config.PropertyPlaceholderConfigurer#0'
+2013-03-04 18:44:37,742 [21] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Invoking IObjectPostProcessors after initialization of object 'Spring.Objects.Factory.Config.PropertyPlaceholderConfigurer#0'
+2013-03-04 18:44:37,743 [21] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Cached shared instance of singleton object 'Spring.Objects.Factory.Config.PropertyPlaceholderConfigurer#0'
+2013-03-04 18:44:37,743 [21] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Calling code asked for normal instance for name 'Spring.Objects.Factory.Config.PropertyPlaceholderConfigurer#0'.
+2013-03-04 18:44:37,743 [21] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - GetObjectInternal: returning instance for objectname Spring.Objects.Factory.Config.PropertyPlaceholderConfigurer#0
+2013-03-04 18:44:37,744 [21] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - processed 1 IFactoryObjectPostProcessors defined in application context [spring.root].
+2013-03-04 18:44:37,745 [21] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] -    GetObjectInternal: obtaining instance for name Spring.Dao.Attributes.PersistenceExceptionTranslationPostProcessor#0 => canonical name Spring.Dao.Attributes.PersistenceExceptionTranslationPostProcessor#0
+2013-03-04 18:44:37,745 [21] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Creating shared instance of singleton object 'Spring.Dao.Attributes.PersistenceExceptionTranslationPostProcessor#0'
+2013-03-04 18:44:37,746 [21] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Creating instance of Object 'Spring.Dao.Attributes.PersistenceExceptionTranslationPostProcessor#0' with merged definition [Root web object with class [Spring.Dao.Attributes.PersistenceExceptionTranslationPostProcessor] defined in assembly [Spring.Northwind.Dao.NHibernate, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null], resource [Spring.Northwind.Dao.Dao.xml] line 49].
+2013-03-04 18:44:37,746 [21] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Invoking IInstantiationAwareObjectPostProcessors before the instantiation of 'Spring.Dao.Attributes.PersistenceExceptionTranslationPostProcessor#0'.
+2013-03-04 18:44:37,746 [21] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Eagerly caching object 'Spring.Dao.Attributes.PersistenceExceptionTranslationPostProcessor#0' to allow for resolving potential circular references
+2013-03-04 18:44:37,747 [21] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Configuring object using definition 'Spring.Dao.Attributes.PersistenceExceptionTranslationPostProcessor#0'
+2013-03-04 18:44:37,747 [21] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Setting the ObjectFactory property on the IObjectFactoryAware object 'Spring.Dao.Attributes.PersistenceExceptionTranslationPostProcessor#0'.
+2013-03-04 18:44:37,748 [21] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] -       GetObjectInternal: obtaining instance for name &NHibernateSessionFactory => canonical name NHibernateSessionFactory
+2013-03-04 18:44:37,749 [21] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Creating shared instance of singleton object 'NHibernateSessionFactory'
+2013-03-04 18:44:37,749 [21] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Creating instance of Object 'NHibernateSessionFactory' with merged definition [Root web object with class [Spring.Northwind.Dao.NHibernate.CustomLocalSessionFactoryObject] defined in assembly [Spring.Northwind.Dao.NHibernate, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null], resource [Spring.Northwind.Dao.Dao.xml] line 21].
+2013-03-04 18:44:37,750 [21] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Invoking IInstantiationAwareObjectPostProcessors before the instantiation of 'NHibernateSessionFactory'.
+2013-03-04 18:44:37,750 [21] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Eagerly caching object 'NHibernateSessionFactory' to allow for resolving potential circular references
+2013-03-04 18:44:37,751 [21] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Configuring object using definition 'NHibernateSessionFactory'
+2013-03-04 18:44:37,751 [21] DEBUG Spring.Objects.Factory.Support.ObjectDefinitionValueResolver [(null)] - Resolving reference from property 'DbProvider' in object 'NHibernateSessionFactory' to object 'DbProvider'.
+2013-03-04 18:44:37,752 [21] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] -          GetObjectInternal: obtaining instance for name DbProvider => canonical name DbProvider
+2013-03-04 18:44:37,753 [21] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Creating shared instance of singleton object 'DbProvider'
+2013-03-04 18:44:37,754 [21] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Creating instance of Object 'DbProvider' with merged definition [Root web object with class [Spring.Data.Common.DbProviderFactoryObject] defined in ].
+2013-03-04 18:44:37,754 [21] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Invoking IInstantiationAwareObjectPostProcessors before the instantiation of 'DbProvider'.
+2013-03-04 18:44:37,755 [21] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Eagerly caching object 'DbProvider' to allow for resolving potential circular references
+2013-03-04 18:44:37,756 [21] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Configuring object using definition 'DbProvider'
+2013-03-04 18:44:37,757 [21] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Invoking IObjectPostProcessors before initialization of object 'DbProvider'
+2013-03-04 18:44:37,757 [21] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Calling AfterPropertiesSet() on object with name 'DbProvider'.
+2013-03-04 18:44:37,758 [21] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Invoking IObjectPostProcessors after initialization of object 'DbProvider'
+2013-03-04 18:44:37,759 [21] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Cached shared instance of singleton object 'DbProvider'
+2013-03-04 18:44:37,760 [21] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Object with name 'DbProvider' is a factory object.
+2013-03-04 18:44:37,760 [21] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Dereferencing Object with name 'DbProvider'
+2013-03-04 18:44:37,761 [21] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] -    GetObjectInternal: obtaining instance for name System.Data.SqlClient => canonical name SqlServer-2.0
+2013-03-04 18:44:37,762 [21] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Creating instance of Object 'System.Data.SqlClient' with merged definition [RootObjectDefinition : Class [Spring.Data.Common.DbProvider]; Abstract = False; Parent = ; Scope = prototype; Singleton = False; LazyInit = False; Autowire = No; Autowire-Candidate = True; Primary = False; DependencyCheck = None; InitMethodName = ; DestroyMethodName = ; FactoryMethodName = ; FactoryObjectName = ; defined in = assembly [Spring.Data, Version=2.0.0.40000, Culture=neutral, PublicKeyToken=null], resource [Spring.Data.Common.dbproviders.xml] line 49].
+2013-03-04 18:44:37,763 [21] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IInstantiationAwareObjectPostProcessors before the instantiation of 'System.Data.SqlClient'.
+2013-03-04 18:44:37,764 [21] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Creating instance of Object 'Spring.Data.Common.DbMetadata#2D18623' with merged definition [RootObjectDefinition : Class [Spring.Data.Common.DbMetadata]; Abstract = False; Parent = ; Scope = prototype; Singleton = False; LazyInit = False; Autowire = No; Autowire-Candidate = True; Primary = False; DependencyCheck = None; InitMethodName = ; DestroyMethodName = ; FactoryMethodName = ; FactoryObjectName = ; defined in = assembly [Spring.Data, Version=2.0.0.40000, Culture=neutral, PublicKeyToken=null], resource [Spring.Data.Common.dbproviders.xml] line 51].
+2013-03-04 18:44:37,765 [21] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IInstantiationAwareObjectPostProcessors before the instantiation of 'Spring.Data.Common.DbMetadata#2D18623'.
+2013-03-04 18:44:37,766 [21] DEBUG Spring.Objects.Factory.Support.ConstructorResolver [(null)] - Object 'Spring.Data.Common.DbMetadata#2D18623' instantiated via constructor [Void .ctor(System.String, System.String, System.Type, System.Type, System.Type, System.Type, System.Type, System.String, System.Type, System.String, System.String, System.String, System.Type, Boolean, Boolean, Boolean, System.String)].
+2013-03-04 18:44:37,767 [21] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Configuring object using definition 'Spring.Data.Common.DbMetadata#2D18623'
+2013-03-04 18:44:37,768 [21] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IObjectPostProcessors before initialization of object 'Spring.Data.Common.DbMetadata#2D18623'
+2013-03-04 18:44:37,768 [21] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IObjectPostProcessors after initialization of object 'Spring.Data.Common.DbMetadata#2D18623'
+2013-03-04 18:44:37,769 [21] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Calling code asked for normal instance for name 'Spring.Data.Common.DbMetadata#2D18623'.
+2013-03-04 18:44:37,770 [21] DEBUG Spring.Objects.Factory.Support.ConstructorResolver [(null)] - Object 'System.Data.SqlClient' instantiated via constructor [Void .ctor(Spring.Data.Common.IDbMetadata)].
+2013-03-04 18:44:37,771 [21] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Configuring object using definition 'System.Data.SqlClient'
+2013-03-04 18:44:37,772 [21] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IObjectPostProcessors before initialization of object 'System.Data.SqlClient'
+2013-03-04 18:44:37,773 [21] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IObjectPostProcessors after initialization of object 'System.Data.SqlClient'
+2013-03-04 18:44:37,774 [21] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - GetObjectInternal: returning instance for objectname System.Data.SqlClient
+2013-03-04 18:44:37,775 [21] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Invoking IObjectPostProcessors after initialization of object 'DbProvider'
+2013-03-04 18:44:37,776 [21] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] -       GetObjectInternal: returning instance for objectname DbProvider
+2013-03-04 18:44:37,776 [21] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Invoking IObjectPostProcessors before initialization of object 'NHibernateSessionFactory'
+2013-03-04 18:44:37,777 [21] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Calling AfterPropertiesSet() on object with name 'NHibernateSessionFactory'.
+2013-03-04 18:44:37,778 [21] INFO  NHibernate.Cfg.Configuration [(null)] - checking mappings queue
+2013-03-04 18:44:37,778 [21] INFO  NHibernate.Cfg.Configuration [(null)] - processing one-to-many association mappings
+2013-03-04 18:44:37,779 [21] INFO  NHibernate.Cfg.Configuration [(null)] - processing one-to-one association property references
+2013-03-04 18:44:37,779 [21] INFO  NHibernate.Cfg.Configuration [(null)] - processing foreign key constraints
+2013-03-04 18:44:37,780 [21] INFO  NHibernate.Cfg.Configuration [(null)] - processing filters (second pass)
+2013-03-04 18:44:37,785 [21] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] -    GetObjectInternal: obtaining instance for name &NHibernateSessionFactory => canonical name NHibernateSessionFactory
+2013-03-04 18:44:37,786 [21] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Creating shared instance of singleton object 'NHibernateSessionFactory'
+2013-03-04 18:44:37,787 [21] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Creating instance of Object 'NHibernateSessionFactory' with merged definition [Root web object with class [Spring.Northwind.Dao.NHibernate.CustomLocalSessionFactoryObject] defined in assembly [Spring.Northwind.Dao.NHibernate, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null], resource [Spring.Northwind.Dao.Dao.xml] line 21].
+2013-03-04 18:44:37,788 [21] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Invoking IInstantiationAwareObjectPostProcessors before the instantiation of 'NHibernateSessionFactory'.
+2013-03-04 18:44:37,789 [21] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Eagerly caching object 'NHibernateSessionFactory' to allow for resolving potential circular references
+2013-03-04 18:44:37,790 [21] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Configuring object using definition 'NHibernateSessionFactory'
+2013-03-04 18:44:37,791 [21] DEBUG Spring.Objects.Factory.Support.ObjectDefinitionValueResolver [(null)] - Resolving reference from property 'DbProvider' in object 'NHibernateSessionFactory' to object 'DbProvider'.
+2013-03-04 18:44:37,792 [21] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] -       GetObjectInternal: obtaining instance for name DbProvider => canonical name DbProvider
+2013-03-04 18:44:37,793 [21] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Returning cached instance of singleton object 'DbProvider'.
+2013-03-04 18:44:37,793 [21] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Object with name 'DbProvider' is a factory object.
+2013-03-04 18:44:37,795 [21] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Returning factory product from cache for Object with name 'DbProvider'
+2013-03-04 18:44:37,796 [21] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] -    GetObjectInternal: returning instance for objectname DbProvider
+2013-03-04 18:44:37,797 [21] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Invoking IObjectPostProcessors before initialization of object 'NHibernateSessionFactory'
+2013-03-04 18:44:37,798 [21] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Calling AfterPropertiesSet() on object with name 'NHibernateSessionFactory'.
+2013-03-04 18:44:37,799 [21] INFO  NHibernate.Cfg.Configuration [(null)] - checking mappings queue
+2013-03-04 18:44:37,800 [21] INFO  NHibernate.Cfg.Configuration [(null)] - processing one-to-many association mappings
+2013-03-04 18:44:37,801 [21] INFO  NHibernate.Cfg.Configuration [(null)] - processing one-to-one association property references
+2013-03-04 18:44:37,801 [21] INFO  NHibernate.Cfg.Configuration [(null)] - processing foreign key constraints
+2013-03-04 18:44:37,802 [21] INFO  NHibernate.Cfg.Configuration [(null)] - processing filters (second pass)
+2013-03-04 18:44:37,809 [21] ERROR NHibernate.Cfg.Configuration [(null)] - Could not compile the mapping document: (XmlDocument)
+NHibernate.MappingException: Could not compile the mapping document: (XmlDocument) ---> NHibernate.HibernateException: Could not instantiate dialect class NHibernate.Dialect.MsSql2008Dialect ---> Spring.Core.CannotLoadObjectTypeException: Cannot resolve type [Spring.Northwind.Dao.CustomerDao] for object with name 'Spring.Northwind.Dao.CustomerDao#0' defined in file [D:\GitHub\Spring.Data.NHibernate.Northwind_Demo\src\Spring.Northwind.MvcApp\Web.xml] line 9 ---> System.TypeLoadException: Could not load type from string value 'Spring.Northwind.Dao.CustomerDao'.
+   在 Spring.Core.TypeResolution.TypeResolver.Resolve(String typeName) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Core\TypeResolution\TypeResolver.cs:行号 83
+   在 Spring.Core.TypeResolution.GenericTypeResolver.Resolve(String typeName) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Core\TypeResolution\GenericTypeResolver.cs:行号 91
+   在 Spring.Core.TypeResolution.CachedTypeResolver.Resolve(String typeName) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Core\TypeResolution\CachedTypeResolver.cs:行号 107
+   在 Spring.Core.TypeResolution.TypeResolutionUtils.ResolveType(String typeName) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Core\TypeResolution\TypeResolutionUtils.cs:行号 101
+   在 Spring.Objects.Factory.Support.AbstractObjectDefinition.ResolveObjectType() 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectDefinition.cs:行号 706
+   在 Spring.Objects.Factory.Support.AbstractObjectFactory.ResolveObjectType(RootObjectDefinition rod, String objectName) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:行号 1215
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Spring.Objects.Factory.Support.AbstractObjectFactory.ResolveObjectType(RootObjectDefinition rod, String objectName) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:行号 1223
+   在 Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory.PredictObjectType(String objectName, RootObjectDefinition mod) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\AbstractAutowireCapableObjectFactory.cs:行号 160
+   在 Spring.Objects.Factory.Support.DefaultListableObjectFactory.DoGetObjectNamesForType(Type type, Boolean includeNonSingletons, Boolean allowEagerInit) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\DefaultListableObjectFactory.cs:行号 1050
+   在 Spring.Objects.Factory.Support.DefaultListableObjectFactory.GetObjectNamesForType(Type type) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\DefaultListableObjectFactory.cs:行号 670
+   在 Spring.Context.Support.AbstractApplicationContext.GetObjectNamesForType(Type type) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Context\Support\AbstractApplicationContext.cs:行号 1234
+   在 Spring.Data.NHibernate.Bytecode.ObjectsFactory.CreateInstance(Type type) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Data.NHibernate\Data\NHibernate\Bytecode\ObjectsFactory.cs:行号 57
+   在 NHibernate.Dialect.Dialect.InstantiateDialect(String dialectName)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 NHibernate.Dialect.Dialect.InstantiateDialect(String dialectName)
+   在 NHibernate.Dialect.Dialect.GetDialect(IDictionary`2 props)
+   在 NHibernate.Cfg.Configuration.AddDeserializedMapping(HbmMapping mappingDocument, String documentFileName)
+   --- 内部异常堆栈跟踪的结尾 ---
+2013-03-04 18:44:37,810 [21] ERROR Spring.Objects.Factory.Support.WebObjectFactory [(null)] - GetObjectInternal: error obtaining object &NHibernateSessionFactory
+2013-03-04 18:44:37,811 [21] WARN  Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Ignoring object creation exception on FactoryObject type check
+Spring.Objects.Factory.ObjectCreationException: Error creating object with name 'NHibernateSessionFactory' defined in 'assembly [Spring.Northwind.Dao.NHibernate, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null], resource [Spring.Northwind.Dao.Dao.xml] line 21' : Initialization of object failed : An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+  * Database was not configured through Database method.
+ ---> FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+  * Database was not configured through Database method.
+ ---> FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+  * Database was not configured through Database method.
+ ---> NHibernate.MappingException: Could not compile the mapping document: (XmlDocument) ---> NHibernate.HibernateException: Could not instantiate dialect class NHibernate.Dialect.MsSql2008Dialect ---> Spring.Core.CannotLoadObjectTypeException: Cannot resolve type [Spring.Northwind.Dao.CustomerDao] for object with name 'Spring.Northwind.Dao.CustomerDao#0' defined in file [D:\GitHub\Spring.Data.NHibernate.Northwind_Demo\src\Spring.Northwind.MvcApp\Web.xml] line 9 ---> System.TypeLoadException: Could not load type from string value 'Spring.Northwind.Dao.CustomerDao'.
+   在 Spring.Core.TypeResolution.TypeResolver.Resolve(String typeName) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Core\TypeResolution\TypeResolver.cs:行号 83
+   在 Spring.Core.TypeResolution.GenericTypeResolver.Resolve(String typeName) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Core\TypeResolution\GenericTypeResolver.cs:行号 91
+   在 Spring.Core.TypeResolution.CachedTypeResolver.Resolve(String typeName) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Core\TypeResolution\CachedTypeResolver.cs:行号 107
+   在 Spring.Core.TypeResolution.TypeResolutionUtils.ResolveType(String typeName) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Core\TypeResolution\TypeResolutionUtils.cs:行号 101
+   在 Spring.Objects.Factory.Support.AbstractObjectDefinition.ResolveObjectType() 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectDefinition.cs:行号 706
+   在 Spring.Objects.Factory.Support.AbstractObjectFactory.ResolveObjectType(RootObjectDefinition rod, String objectName) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:行号 1215
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Spring.Objects.Factory.Support.AbstractObjectFactory.ResolveObjectType(RootObjectDefinition rod, String objectName) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:行号 1223
+   在 Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory.PredictObjectType(String objectName, RootObjectDefinition mod) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\AbstractAutowireCapableObjectFactory.cs:行号 160
+   在 Spring.Objects.Factory.Support.DefaultListableObjectFactory.DoGetObjectNamesForType(Type type, Boolean includeNonSingletons, Boolean allowEagerInit) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\DefaultListableObjectFactory.cs:行号 1050
+   在 Spring.Objects.Factory.Support.DefaultListableObjectFactory.GetObjectNamesForType(Type type) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\DefaultListableObjectFactory.cs:行号 670
+   在 Spring.Context.Support.AbstractApplicationContext.GetObjectNamesForType(Type type) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Context\Support\AbstractApplicationContext.cs:行号 1234
+   在 Spring.Data.NHibernate.Bytecode.ObjectsFactory.CreateInstance(Type type) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Data.NHibernate\Data\NHibernate\Bytecode\ObjectsFactory.cs:行号 57
+   在 NHibernate.Dialect.Dialect.InstantiateDialect(String dialectName)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 NHibernate.Dialect.Dialect.InstantiateDialect(String dialectName)
+   在 NHibernate.Dialect.Dialect.GetDialect(IDictionary`2 props)
+   在 NHibernate.Cfg.Configuration.AddDeserializedMapping(HbmMapping mappingDocument, String documentFileName)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 NHibernate.Cfg.Configuration.LogAndThrow(Exception exception)
+   在 NHibernate.Cfg.Configuration.AddDeserializedMapping(HbmMapping mappingDocument, String documentFileName)
+   在 NHibernate.Cfg.Configuration.AddValidatedDocument(NamedXmlDocument doc)
+   在 NHibernate.Cfg.Configuration.ProcessMappingsQueue()
+   在 NHibernate.Cfg.Configuration.AddDocumentThroughQueue(NamedXmlDocument document)
+   在 NHibernate.Cfg.Configuration.AddXmlReader(XmlReader hbmReader, String name)
+   在 NHibernate.Cfg.Configuration.AddInputStream(Stream xmlInputStream, String name)
+   在 NHibernate.Cfg.Configuration.AddDocument(XmlDocument doc, String name)
+   在 NHibernate.Cfg.Configuration.AddDocument(XmlDocument doc)
+   在 FluentNHibernate.PersistenceModel.Configure(Configuration cfg) 位置 d:\BuildAgent-01\work\3fc77865051739a6\src\FluentNHibernate\PersistenceModel.cs:行号 292
+   在 FluentNHibernate.Cfg.MappingConfiguration.Apply(Configuration cfg) 位置 d:\BuildAgent-01\work\3fc77865051739a6\src\FluentNHibernate\Cfg\MappingConfiguration.cs:行号 87
+   在 FluentNHibernate.Cfg.FluentConfiguration.BuildConfiguration() 位置 d:\BuildAgent-01\work\3fc77865051739a6\src\FluentNHibernate\Cfg\FluentConfiguration.cs:行号 249
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 FluentNHibernate.Cfg.FluentConfiguration.BuildConfiguration() 位置 d:\BuildAgent-01\work\3fc77865051739a6\src\FluentNHibernate\Cfg\FluentConfiguration.cs:行号 262
+   在 FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory() 位置 d:\BuildAgent-01\work\3fc77865051739a6\src\FluentNHibernate\Cfg\FluentConfiguration.cs:行号 230
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory() 位置 d:\BuildAgent-01\work\3fc77865051739a6\src\FluentNHibernate\Cfg\FluentConfiguration.cs:行号 233
+   在 Spring.Northwind.Dao.NHibernate.CustomLocalSessionFactoryObject.PostProcessConfiguration(Configuration config) 位置 d:\GitHub\Spring.Data.NHibernate.Northwind_Demo\src\Spring.Northwind.Dao.NHibernate\Dao\NHibernate\CustomLocalSessionFactoryObject.cs:行号 43
+   在 Spring.Data.NHibernate.LocalSessionFactoryObject.AfterPropertiesSet() 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Data.NHibernate\Data\NHibernate\LocalSessionFactoryObject.cs:行号 662
+   在 Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory.InvokeInitMethods(Object target, String name, IConfigurableObjectDefinition definition) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\AbstractAutowireCapableObjectFactory.cs:行号 1319
+   在 Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory.ConfigureObject(String name, RootObjectDefinition definition, IObjectWrapper wrapper) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\AbstractAutowireCapableObjectFactory.cs:行号 1872
+   在 Spring.Objects.Factory.Support.WebObjectFactory.ConfigureObject(String name, RootObjectDefinition definition, IObjectWrapper wrapper) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Web\Objects\Factory\Support\WebObjectFactory.cs:行号 450
+   在 Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory.InstantiateObject(String name, RootObjectDefinition definition, Object[] arguments, Boolean allowEagerCaching, Boolean suppressConfigure) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\AbstractAutowireCapableObjectFactory.cs:行号 946
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory.InstantiateObject(String name, RootObjectDefinition definition, Object[] arguments, Boolean allowEagerCaching, Boolean suppressConfigure) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\AbstractAutowireCapableObjectFactory.cs:行号 963
+   在 Spring.Objects.Factory.Support.AbstractObjectFactory.CreateAndCacheSingletonInstance(String objectName, RootObjectDefinition objectDefinition, Object[] arguments) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:行号 2429
+   在 Spring.Objects.Factory.Support.WebObjectFactory.CreateAndCacheSingletonInstance(String objectName, RootObjectDefinition objectDefinition, Object[] arguments) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Web\Objects\Factory\Support\WebObjectFactory.cs:行号 299
+   在 Spring.Objects.Factory.Support.AbstractObjectFactory.GetObjectInternal(String name, Type requiredType, Object[] arguments, Boolean suppressConfigure) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:行号 2322
+   在 Spring.Objects.Factory.Support.AbstractObjectFactory.GetFactoryObject(String objectName) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:行号 1165
+   在 Spring.Objects.Factory.Support.AbstractObjectFactory.GetTypeForFactoryObject(String objectName, RootObjectDefinition mod) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:行号 886
+2013-03-04 18:44:37,813 [21] ERROR NHibernate.Cfg.Configuration [(null)] - Could not compile the mapping document: (XmlDocument)
+NHibernate.MappingException: Could not compile the mapping document: (XmlDocument) ---> NHibernate.HibernateException: Could not instantiate dialect class NHibernate.Dialect.MsSql2008Dialect ---> Spring.Core.CannotLoadObjectTypeException: Cannot resolve type [Spring.Northwind.Dao.CustomerDao] for object with name 'Spring.Northwind.Dao.CustomerDao#0' defined in file [D:\GitHub\Spring.Data.NHibernate.Northwind_Demo\src\Spring.Northwind.MvcApp\Web.xml] line 9 ---> System.TypeLoadException: Could not load type from string value 'Spring.Northwind.Dao.CustomerDao'.
+   在 Spring.Core.TypeResolution.TypeResolver.Resolve(String typeName) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Core\TypeResolution\TypeResolver.cs:行号 83
+   在 Spring.Core.TypeResolution.GenericTypeResolver.Resolve(String typeName) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Core\TypeResolution\GenericTypeResolver.cs:行号 91
+   在 Spring.Core.TypeResolution.CachedTypeResolver.Resolve(String typeName) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Core\TypeResolution\CachedTypeResolver.cs:行号 107
+   在 Spring.Core.TypeResolution.TypeResolutionUtils.ResolveType(String typeName) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Core\TypeResolution\TypeResolutionUtils.cs:行号 101
+   在 Spring.Objects.Factory.Support.AbstractObjectDefinition.ResolveObjectType() 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectDefinition.cs:行号 706
+   在 Spring.Objects.Factory.Support.AbstractObjectFactory.ResolveObjectType(RootObjectDefinition rod, String objectName) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:行号 1215
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Spring.Objects.Factory.Support.AbstractObjectFactory.ResolveObjectType(RootObjectDefinition rod, String objectName) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:行号 1223
+   在 Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory.PredictObjectType(String objectName, RootObjectDefinition mod) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\AbstractAutowireCapableObjectFactory.cs:行号 160
+   在 Spring.Objects.Factory.Support.DefaultListableObjectFactory.DoGetObjectNamesForType(Type type, Boolean includeNonSingletons, Boolean allowEagerInit) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\DefaultListableObjectFactory.cs:行号 1050
+   在 Spring.Objects.Factory.Support.DefaultListableObjectFactory.GetObjectNamesForType(Type type) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\DefaultListableObjectFactory.cs:行号 670
+   在 Spring.Context.Support.AbstractApplicationContext.GetObjectNamesForType(Type type) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Context\Support\AbstractApplicationContext.cs:行号 1234
+   在 Spring.Data.NHibernate.Bytecode.ObjectsFactory.CreateInstance(Type type) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Data.NHibernate\Data\NHibernate\Bytecode\ObjectsFactory.cs:行号 57
+   在 NHibernate.Dialect.Dialect.InstantiateDialect(String dialectName)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 NHibernate.Dialect.Dialect.InstantiateDialect(String dialectName)
+   在 NHibernate.Dialect.Dialect.GetDialect(IDictionary`2 props)
+   在 NHibernate.Cfg.Configuration.AddDeserializedMapping(HbmMapping mappingDocument, String documentFileName)
+   --- 内部异常堆栈跟踪的结尾 ---
+2013-03-04 18:44:37,814 [21] ERROR Spring.Objects.Factory.Support.WebObjectFactory [(null)] -    GetObjectInternal: error obtaining object &NHibernateSessionFactory
+2013-03-04 18:44:37,815 [21] ERROR Spring.Objects.Factory.Support.WebObjectFactory [(null)] - GetObjectInternal: error obtaining object Spring.Dao.Attributes.PersistenceExceptionTranslationPostProcessor#0
+2013-03-04 18:44:37,815 [21] ERROR Spring.Context.Support.WebApplicationContext [(null)] - failed creating context 'spring.root', Stacktrace:
+   在 Spring.Context.Support.WebApplicationContext.GetContextInternal(String virtualPath)
+   在 Spring.Context.Support.WebApplicationContext.GetRootContext()
+   在 Spring.Context.Support.WebSupportModule.Init(HttpApplication app)
+   在 System.Web.HttpApplication.InitModulesCommon()
+   在 System.Web.HttpApplication.InitModules()
+   在 System.Web.HttpApplication.InitInternal(HttpContext context, HttpApplicationState state, MethodInfo[] handlers)
+   在 System.Web.HttpApplicationFactory.GetNormalApplicationInstance(HttpContext context)
+   在 System.Web.HttpApplicationFactory.GetApplicationInstance(HttpContext context)
+   在 System.Web.HttpRuntime.ProcessRequestInternal(HttpWorkerRequest wr)
+   在 System.Web.HttpRuntime.ProcessRequestNoDemand(HttpWorkerRequest wr)
+   在 System.Web.Hosting.ISAPIRuntime.ProcessRequest(IntPtr ecb, Int32 iWRType)
+   在 System.Web.Hosting.ISAPIRuntime.System.Web.Hosting.IISAPIRuntime2.ProcessRequest(IntPtr ecb, Int32 iWRType)
+
+System.Configuration.ConfigurationErrorsException: Error creating context 'spring.root': Could not load type from string value 'Spring.Northwind.Dao.CustomerDao'. ---> Spring.Objects.Factory.ObjectCreationException: Error creating object with name 'NHibernateSessionFactory' defined in 'assembly [Spring.Northwind.Dao.NHibernate, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null], resource [Spring.Northwind.Dao.Dao.xml] line 21' : Initialization of object failed : An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+  * Database was not configured through Database method.
+ ---> FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+  * Database was not configured through Database method.
+ ---> FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+  * Database was not configured through Database method.
+ ---> NHibernate.MappingException: Could not compile the mapping document: (XmlDocument) ---> NHibernate.HibernateException: Could not instantiate dialect class NHibernate.Dialect.MsSql2008Dialect ---> Spring.Core.CannotLoadObjectTypeException: Cannot resolve type [Spring.Northwind.Dao.CustomerDao] for object with name 'Spring.Northwind.Dao.CustomerDao#0' defined in file [D:\GitHub\Spring.Data.NHibernate.Northwind_Demo\src\Spring.Northwind.MvcApp\Web.xml] line 9 ---> System.TypeLoadException: Could not load type from string value 'Spring.Northwind.Dao.CustomerDao'.
+   在 Spring.Core.TypeResolution.TypeResolver.Resolve(String typeName) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Core\TypeResolution\TypeResolver.cs:行号 83
+   在 Spring.Core.TypeResolution.GenericTypeResolver.Resolve(String typeName) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Core\TypeResolution\GenericTypeResolver.cs:行号 91
+   在 Spring.Core.TypeResolution.CachedTypeResolver.Resolve(String typeName) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Core\TypeResolution\CachedTypeResolver.cs:行号 107
+   在 Spring.Core.TypeResolution.TypeResolutionUtils.ResolveType(String typeName) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Core\TypeResolution\TypeResolutionUtils.cs:行号 101
+   在 Spring.Objects.Factory.Support.AbstractObjectDefinition.ResolveObjectType() 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectDefinition.cs:行号 706
+   在 Spring.Objects.Factory.Support.AbstractObjectFactory.ResolveObjectType(RootObjectDefinition rod, String objectName) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:行号 1215
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Spring.Objects.Factory.Support.AbstractObjectFactory.ResolveObjectType(RootObjectDefinition rod, String objectName) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:行号 1223
+   在 Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory.PredictObjectType(String objectName, RootObjectDefinition mod) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\AbstractAutowireCapableObjectFactory.cs:行号 160
+   在 Spring.Objects.Factory.Support.DefaultListableObjectFactory.DoGetObjectNamesForType(Type type, Boolean includeNonSingletons, Boolean allowEagerInit) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\DefaultListableObjectFactory.cs:行号 1050
+   在 Spring.Objects.Factory.Support.DefaultListableObjectFactory.GetObjectNamesForType(Type type) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\DefaultListableObjectFactory.cs:行号 670
+   在 Spring.Context.Support.AbstractApplicationContext.GetObjectNamesForType(Type type) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Context\Support\AbstractApplicationContext.cs:行号 1234
+   在 Spring.Data.NHibernate.Bytecode.ObjectsFactory.CreateInstance(Type type) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Data.NHibernate\Data\NHibernate\Bytecode\ObjectsFactory.cs:行号 57
+   在 NHibernate.Dialect.Dialect.InstantiateDialect(String dialectName)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 NHibernate.Dialect.Dialect.InstantiateDialect(String dialectName)
+   在 NHibernate.Dialect.Dialect.GetDialect(IDictionary`2 props)
+   在 NHibernate.Cfg.Configuration.AddDeserializedMapping(HbmMapping mappingDocument, String documentFileName)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 NHibernate.Cfg.Configuration.LogAndThrow(Exception exception)
+   在 NHibernate.Cfg.Configuration.AddDeserializedMapping(HbmMapping mappingDocument, String documentFileName)
+   在 NHibernate.Cfg.Configuration.AddValidatedDocument(NamedXmlDocument doc)
+   在 NHibernate.Cfg.Configuration.ProcessMappingsQueue()
+   在 NHibernate.Cfg.Configuration.AddDocumentThroughQueue(NamedXmlDocument document)
+   在 NHibernate.Cfg.Configuration.AddXmlReader(XmlReader hbmReader, String name)
+   在 NHibernate.Cfg.Configuration.AddInputStream(Stream xmlInputStream, String name)
+   在 NHibernate.Cfg.Configuration.AddDocument(XmlDocument doc, String name)
+   在 NHibernate.Cfg.Configuration.AddDocument(XmlDocument doc)
+   在 FluentNHibernate.PersistenceModel.Configure(Configuration cfg) 位置 d:\BuildAgent-01\work\3fc77865051739a6\src\FluentNHibernate\PersistenceModel.cs:行号 292
+   在 FluentNHibernate.Cfg.MappingConfiguration.Apply(Configuration cfg) 位置 d:\BuildAgent-01\work\3fc77865051739a6\src\FluentNHibernate\Cfg\MappingConfiguration.cs:行号 87
+   在 FluentNHibernate.Cfg.FluentConfiguration.BuildConfiguration() 位置 d:\BuildAgent-01\work\3fc77865051739a6\src\FluentNHibernate\Cfg\FluentConfiguration.cs:行号 249
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 FluentNHibernate.Cfg.FluentConfiguration.BuildConfiguration() 位置 d:\BuildAgent-01\work\3fc77865051739a6\src\FluentNHibernate\Cfg\FluentConfiguration.cs:行号 262
+   在 FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory() 位置 d:\BuildAgent-01\work\3fc77865051739a6\src\FluentNHibernate\Cfg\FluentConfiguration.cs:行号 230
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory() 位置 d:\BuildAgent-01\work\3fc77865051739a6\src\FluentNHibernate\Cfg\FluentConfiguration.cs:行号 233
+   在 Spring.Northwind.Dao.NHibernate.CustomLocalSessionFactoryObject.PostProcessConfiguration(Configuration config) 位置 d:\GitHub\Spring.Data.NHibernate.Northwind_Demo\src\Spring.Northwind.Dao.NHibernate\Dao\NHibernate\CustomLocalSessionFactoryObject.cs:行号 43
+   在 Spring.Data.NHibernate.LocalSessionFactoryObject.AfterPropertiesSet() 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Data.NHibernate\Data\NHibernate\LocalSessionFactoryObject.cs:行号 662
+   在 Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory.InvokeInitMethods(Object target, String name, IConfigurableObjectDefinition definition) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\AbstractAutowireCapableObjectFactory.cs:行号 1319
+   在 Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory.ConfigureObject(String name, RootObjectDefinition definition, IObjectWrapper wrapper) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\AbstractAutowireCapableObjectFactory.cs:行号 1872
+   在 Spring.Objects.Factory.Support.WebObjectFactory.ConfigureObject(String name, RootObjectDefinition definition, IObjectWrapper wrapper) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Web\Objects\Factory\Support\WebObjectFactory.cs:行号 450
+   在 Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory.InstantiateObject(String name, RootObjectDefinition definition, Object[] arguments, Boolean allowEagerCaching, Boolean suppressConfigure) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\AbstractAutowireCapableObjectFactory.cs:行号 946
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory.InstantiateObject(String name, RootObjectDefinition definition, Object[] arguments, Boolean allowEagerCaching, Boolean suppressConfigure) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\AbstractAutowireCapableObjectFactory.cs:行号 963
+   在 Spring.Objects.Factory.Support.AbstractObjectFactory.CreateAndCacheSingletonInstance(String objectName, RootObjectDefinition objectDefinition, Object[] arguments) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:行号 2429
+   在 Spring.Objects.Factory.Support.WebObjectFactory.CreateAndCacheSingletonInstance(String objectName, RootObjectDefinition objectDefinition, Object[] arguments) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Web\Objects\Factory\Support\WebObjectFactory.cs:行号 299
+   在 Spring.Objects.Factory.Support.AbstractObjectFactory.GetObjectInternal(String name, Type requiredType, Object[] arguments, Boolean suppressConfigure) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:行号 2322
+   在 Spring.Objects.Factory.Support.DefaultListableObjectFactory.DoGetObjectsOfType(Type type, Boolean includePrototypes, Boolean includeFactoryObjects, IDictionary resultCollector) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\DefaultListableObjectFactory.cs:行号 884
+   在 Spring.Objects.Factory.Support.DefaultListableObjectFactory.GetObjectsOfType(Type type, Boolean includePrototypes, Boolean includeFactoryObjects) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\DefaultListableObjectFactory.cs:行号 853
+   在 Spring.Objects.Factory.ObjectFactoryUtils.ObjectsOfTypeIncludingAncestors(IListableObjectFactory factory, Type type, Boolean includePrototypes, Boolean includeFactoryObjects) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\ObjectFactoryUtils.cs:行号 252
+   在 Spring.Dao.Support.PersistenceExceptionTranslationInterceptor.DetectPersistenceExceptionTranslators(IListableObjectFactory objectFactory) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Data\Dao\Support\PersistenceExceptionTranslationInterceptor.cs:行号 156
+   在 Spring.Dao.Attributes.PersistenceExceptionTranslationAdvisor..ctor(IListableObjectFactory objectFactory, Type repositoryAttributeType) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Data\Dao\Attributes\PersistenceExceptionTranslationAdvisor.cs:行号 63
+   在 Spring.Dao.Attributes.PersistenceExceptionTranslationPostProcessor.set_ObjectFactory(IObjectFactory value) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Data\Dao\Attributes\PersistenceExceptionTranslationPostProcessor.cs:行号 95
+   在 Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory.ConfigureObject(String name, RootObjectDefinition definition, IObjectWrapper wrapper) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\AbstractAutowireCapableObjectFactory.cs:行号 1868
+   在 Spring.Objects.Factory.Support.WebObjectFactory.ConfigureObject(String name, RootObjectDefinition definition, IObjectWrapper wrapper) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Web\Objects\Factory\Support\WebObjectFactory.cs:行号 450
+   在 Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory.InstantiateObject(String name, RootObjectDefinition definition, Object[] arguments, Boolean allowEagerCaching, Boolean suppressConfigure) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\AbstractAutowireCapableObjectFactory.cs:行号 955
+   在 Spring.Objects.Factory.Support.AbstractObjectFactory.CreateAndCacheSingletonInstance(String objectName, RootObjectDefinition objectDefinition, Object[] arguments) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:行号 2429
+   在 Spring.Objects.Factory.Support.WebObjectFactory.CreateAndCacheSingletonInstance(String objectName, RootObjectDefinition objectDefinition, Object[] arguments) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Web\Objects\Factory\Support\WebObjectFactory.cs:行号 299
+   在 Spring.Objects.Factory.Support.AbstractObjectFactory.GetObjectInternal(String name, Type requiredType, Object[] arguments, Boolean suppressConfigure) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:行号 2322
+   在 Spring.Objects.Factory.Support.DefaultListableObjectFactory.DoGetObjectsOfType(Type type, Boolean includePrototypes, Boolean includeFactoryObjects, IDictionary resultCollector) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\DefaultListableObjectFactory.cs:行号 884
+   在 Spring.Objects.Factory.Support.DefaultListableObjectFactory.GetObjects[T](Boolean includePrototypes, Boolean includeFactoryObjects) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Objects\Factory\Support\DefaultListableObjectFactory.cs:行号 919
+   在 Spring.Context.Support.AbstractApplicationContext.GetObjects[T](Boolean includePrototypes, Boolean includeFactoryObjects) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Context\Support\AbstractApplicationContext.cs:行号 1507
+   在 Spring.Context.Support.AbstractApplicationContext.RegisterObjectPostProcessors(IConfigurableListableObjectFactory objectFactory) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Context\Support\AbstractApplicationContext.cs:行号 648
+   在 Spring.Context.Support.AbstractApplicationContext.Refresh() 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Context\Support\AbstractApplicationContext.cs:行号 994
+   在 Spring.Context.Support.WebApplicationContext..ctor(WebApplicationContextArgs args) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Web\Context\Support\WebApplicationContext.cs:行号 125
+   在 _dynamic_Spring.Context.Support.WebApplicationContext..ctor(Object[] )
+   在 Spring.Reflection.Dynamic.SafeConstructor.Invoke(Object[] arguments) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Reflection\Dynamic\DynamicConstructor.cs:行号 113
+   在 Spring.Context.Support.ContextHandler.RootContextInstantiator.InvokeContextConstructor(ConstructorInfo ctor) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Context\Support\ContextHandler.cs:行号 562
+   在 Spring.Context.Support.ContextHandler.ContextInstantiator.InstantiateContext() 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Context\Support\ContextHandler.cs:行号 507
+   在 Spring.Context.Support.ContextHandler.InstantiateContext(IApplicationContext parentContext, Object configContext, String contextName, Type contextType, Boolean caseSensitive, IList`1 resources) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Context\Support\ContextHandler.cs:行号 343
+   在 Spring.Context.Support.WebContextHandler.InstantiateContext(IApplicationContext parent, Object configContext, String contextName, Type contextType, Boolean caseSensitive, IList`1 resources) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Web\Context\Support\WebContextHandler.cs:行号 121
+   在 Spring.Context.Support.ContextHandler.Create(Object parent, Object configContext, XmlNode section) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Context\Support\ContextHandler.cs:行号 288
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Configuration.BaseConfigurationRecord.EvaluateOne(String[] keys, SectionInput input, Boolean isTrusted, FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult)
+   在 System.Configuration.BaseConfigurationRecord.Evaluate(FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult, Boolean getLkg, Boolean getRuntimeObject, Object& result, Object& resultRuntimeObject)
+   在 System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   在 System.Configuration.BaseConfigurationRecord.GetSection(String configKey)
+   在 System.Web.HttpContext.GetSection(String sectionName)
+   在 System.Web.Configuration.HttpConfigurationSystem.GetSection(String sectionName)
+   在 System.Web.Configuration.HttpConfigurationSystem.System.Configuration.Internal.IInternalConfigSystem.GetSection(String configKey)
+   在 System.Configuration.ConfigurationManager.GetSection(String sectionName)
+   在 Spring.Util.ConfigurationUtils.GetSection(String sectionName) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Core\Util\ConfigurationUtils.cs:行号 68
+   在 Spring.Context.Support.WebApplicationContext.GetContextInternal(String virtualPath) 位置 f:\bamboo-home\xml-data\build-dir\SPRNET-RELEASE-JOB1\src\Spring\Spring.Web\Context\Support\WebApplicationContext.cs:行号 306
+2013-03-04 18:44:38,024 [12] DEBUG Spring.Context.Support.WebSupportModule [(null)] - Initializing Application instance
+2013-03-04 18:44:38,024 [12] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - looking up web context 'spring.root' in WebContextCache
+2013-03-04 18:44:38,025 [12] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - looking up web context 'spring.root' in ContextRegistry
+2013-03-04 18:44:38,025 [12] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - web context for vpath 'spring.root' not found. Force creation using filepath '/dummy.context'
+2013-03-04 18:44:38,025 [12] DEBUG Spring.Context.Support.ContextHandler [(null)] - creating context 'spring.root'
+2013-03-04 18:44:38,025 [12] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - ApplicationContext Refresh: Refreshing object factory 
+2013-03-04 18:44:38,026 [12] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionReader [(null)] - Loading XML object definitions from assembly [Spring.Northwind.Dao.NHibernate, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null], resource [Spring.Northwind.Dao.Dao.xml]
+2013-03-04 18:44:38,026 [12] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionReader [(null)] - Using the following XmlReader implementation : System.Xml.XsdValidatingReader
+2013-03-04 18:44:38,027 [12] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader [(null)] - Loading object definitions.
+2013-03-04 18:44:38,028 [12] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Loading object definitions...
+2013-03-04 18:44:38,029 [12] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Default lazy init 'false'.
+2013-03-04 18:44:38,030 [12] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Default dependency check 'none'.
+2013-03-04 18:44:38,031 [12] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Default autowire 'no'.
+2013-03-04 18:44:38,031 [12] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Default merge 'false'.
+2013-03-04 18:44:38,032 [12] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Default init method ''.
+2013-03-04 18:44:38,032 [12] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Default destroy method ''.
+2013-03-04 18:44:38,033 [12] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Default autowire candidates ''.
+2013-03-04 18:44:38,033 [12] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Default init method ''.
+2013-03-04 18:44:38,033 [12] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Default destroy method ''.
+2013-03-04 18:44:38,034 [12] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Neither XML 'id' nor 'name' specified - using generated object name [Spring.Objects.Factory.Config.PropertyPlaceholderConfigurer#0]
+2013-03-04 18:44:38,034 [12] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader [(null)] - Registering object definition with id 'Spring.Objects.Factory.Config.PropertyPlaceholderConfigurer#0'.
+2013-03-04 18:44:38,035 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Registering alias 'Spring.Objects.Factory.Config.PropertyPlaceholderConfigurer' for object with name 'Spring.Objects.Factory.Config.PropertyPlaceholderConfigurer#0'.
+2013-03-04 18:44:38,035 [12] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader [(null)] - Registering object definition with id 'NHibernateSessionFactory'.
+2013-03-04 18:44:38,036 [12] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader [(null)] - Registering object definition with id 'transactionManager'.
+2013-03-04 18:44:38,037 [12] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Neither XML 'id' nor 'name' specified - using generated object name [Spring.Dao.Attributes.PersistenceExceptionTranslationPostProcessor#0]
+2013-03-04 18:44:38,037 [12] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader [(null)] - Registering object definition with id 'Spring.Dao.Attributes.PersistenceExceptionTranslationPostProcessor#0'.
+2013-03-04 18:44:38,037 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Registering alias 'Spring.Dao.Attributes.PersistenceExceptionTranslationPostProcessor' for object with name 'Spring.Dao.Attributes.PersistenceExceptionTranslationPostProcessor#0'.
+2013-03-04 18:44:38,038 [12] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader [(null)] - Registering object definition with id 'CustomerDao'.
+2013-03-04 18:44:38,039 [12] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader [(null)] - Registering object definition with id 'OrderDao'.
+2013-03-04 18:44:38,039 [12] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader [(null)] - Registering object definition with id 'CustomerClassificationCalculator'.
+2013-03-04 18:44:38,040 [12] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader [(null)] - Registering object definition with id 'CustomerEntityProtoType'.
+2013-03-04 18:44:38,040 [12] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader [(null)] - Found 9 <object> elements defining objects.
+2013-03-04 18:44:38,041 [12] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionReader [(null)] - Loaded 9 object definitions from location [assembly://Spring.Northwind.Dao.NHibernate/Spring.Northwind.Dao/Dao.xml]
+2013-03-04 18:44:38,041 [12] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionReader [(null)] - Loading XML object definitions from assembly [Spring.Northwind.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null], resource [Spring.Northwind.Service.Services.xml]
+2013-03-04 18:44:38,042 [12] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionReader [(null)] - Using the following XmlReader implementation : System.Xml.XsdValidatingReader
+2013-03-04 18:44:38,042 [12] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader [(null)] - Loading object definitions.
+2013-03-04 18:44:38,042 [12] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Loading object definitions...
+2013-03-04 18:44:38,043 [12] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Default lazy init 'false'.
+2013-03-04 18:44:38,057 [12] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Default dependency check 'none'.
+2013-03-04 18:44:38,057 [12] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Default autowire 'no'.
+2013-03-04 18:44:38,058 [12] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Default merge 'false'.
+2013-03-04 18:44:38,058 [12] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Default init method ''.
+2013-03-04 18:44:38,059 [12] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Default destroy method ''.
+2013-03-04 18:44:38,059 [12] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Default autowire candidates ''.
+2013-03-04 18:44:38,060 [12] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Default init method ''.
+2013-03-04 18:44:38,060 [12] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Default destroy method ''.
+2013-03-04 18:44:38,061 [12] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader [(null)] - Registering object definition with id 'FulfillmentService'.
+2013-03-04 18:44:38,061 [12] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader [(null)] - Registering object definition with id 'ShippingService'.
+2013-03-04 18:44:38,062 [12] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader [(null)] - Found 15 <object> elements defining objects.
+2013-03-04 18:44:38,062 [12] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionReader [(null)] - Loaded 6 object definitions from location [assembly://Spring.Northwind.Service/Spring.Northwind.Service/Services.xml]
+2013-03-04 18:44:38,062 [12] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionReader [(null)] - Loading XML object definitions from file [D:\GitHub\Spring.Data.NHibernate.Northwind_Demo\src\Spring.Northwind.MvcApp\Web.xml]
+2013-03-04 18:44:38,063 [12] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionReader [(null)] - Using the following XmlReader implementation : System.Xml.XsdValidatingReader
+2013-03-04 18:44:38,063 [12] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader [(null)] - Loading object definitions.
+2013-03-04 18:44:38,064 [12] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Loading object definitions...
+2013-03-04 18:44:38,064 [12] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Default lazy init 'false'.
+2013-03-04 18:44:38,065 [12] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Default dependency check 'none'.
+2013-03-04 18:44:38,065 [12] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Default autowire 'no'.
+2013-03-04 18:44:38,066 [12] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Default merge 'false'.
+2013-03-04 18:44:38,066 [12] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Default init method ''.
+2013-03-04 18:44:38,066 [12] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Default destroy method ''.
+2013-03-04 18:44:38,067 [12] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Default autowire candidates ''.
+2013-03-04 18:44:38,067 [12] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Default init method ''.
+2013-03-04 18:44:38,068 [12] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Default destroy method ''.
+2013-03-04 18:44:38,068 [12] DEBUG Spring.Objects.Factory.Xml.WebObjectDefinitionParserHelper [(null)] - Neither XML 'id' nor 'name' specified - using generated object name [Spring.Northwind.MvcApp.Controllers.HomeController#0]
+2013-03-04 18:44:38,069 [12] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader [(null)] - Registering object definition with id 'Spring.Northwind.MvcApp.Controllers.HomeController#0'.
+2013-03-04 18:44:38,069 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Registering alias 'Spring.Northwind.MvcApp.Controllers.HomeController' for object with name 'Spring.Northwind.MvcApp.Controllers.HomeController#0'.

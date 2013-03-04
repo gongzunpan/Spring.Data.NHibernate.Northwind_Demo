@@ -1,0 +1,273 @@
+2013-03-04 18:45:33,479 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Configuring object using definition 'CustomerEntityProtoType'
+2013-03-04 18:45:33,487 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Invoking IObjectPostProcessors before initialization of object 'CustomerEntityProtoType'
+2013-03-04 18:45:33,487 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Invoking IObjectPostProcessors after initialization of object 'CustomerEntityProtoType'
+2013-03-04 18:45:33,488 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - GetObjectInternal: returning instance for objectname CustomerEntityProtoType
+2013-03-04 18:45:33,489 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] -    GetObjectInternal: obtaining instance for name CustomerEntityProtoType => canonical name CustomerEntityProtoType
+2013-03-04 18:45:33,489 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Creating instance of Object 'CustomerEntityProtoType' with merged definition [Root web object with class [Spring.Northwind.Domain.Customer] defined in assembly [Spring.Northwind.Dao.NHibernate, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null], resource [Spring.Northwind.Dao.Dao.xml] line 64].
+2013-03-04 18:45:33,489 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Invoking IInstantiationAwareObjectPostProcessors before the instantiation of 'CustomerEntityProtoType'.
+2013-03-04 18:45:33,490 [12] DEBUG Spring.Objects.Factory.Support.ObjectDefinitionValueResolver [(null)] - Resolving reference from property 'constructor argument' in object 'CustomerEntityProtoType' to object 'CustomerClassificationCalculator'.
+2013-03-04 18:45:33,490 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] -       GetObjectInternal: obtaining instance for name CustomerClassificationCalculator => canonical name CustomerClassificationCalculator
+2013-03-04 18:45:33,491 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Returning cached instance of singleton object 'CustomerClassificationCalculator'.
+2013-03-04 18:45:33,492 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Calling code asked for normal instance for name 'CustomerClassificationCalculator'.
+2013-03-04 18:45:33,492 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] -    GetObjectInternal: returning instance for objectname CustomerClassificationCalculator
+2013-03-04 18:45:33,493 [12] DEBUG Spring.Objects.Factory.Support.ConstructorResolver [(null)] - Object 'CustomerEntityProtoType' instantiated via constructor [Void .ctor(Spring.Northwind.Domain.ICustomerClassificationCalculator)].
+2013-03-04 18:45:33,493 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Configuring object using definition 'CustomerEntityProtoType'
+2013-03-04 18:45:33,494 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Invoking IObjectPostProcessors before initialization of object 'CustomerEntityProtoType'
+2013-03-04 18:45:33,494 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Invoking IObjectPostProcessors after initialization of object 'CustomerEntityProtoType'
+2013-03-04 18:45:33,495 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - GetObjectInternal: returning instance for objectname CustomerEntityProtoType
+2013-03-04 18:45:33,495 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] -    GetObjectInternal: obtaining instance for name CustomerEntityProtoType => canonical name CustomerEntityProtoType
+2013-03-04 18:45:33,496 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Creating instance of Object 'CustomerEntityProtoType' with merged definition [Root web object with class [Spring.Northwind.Domain.Customer] defined in assembly [Spring.Northwind.Dao.NHibernate, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null], resource [Spring.Northwind.Dao.Dao.xml] line 64].
+2013-03-04 18:45:33,496 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Invoking IInstantiationAwareObjectPostProcessors before the instantiation of 'CustomerEntityProtoType'.
+2013-03-04 18:45:33,497 [12] DEBUG Spring.Objects.Factory.Support.ObjectDefinitionValueResolver [(null)] - Resolving reference from property 'constructor argument' in object 'CustomerEntityProtoType' to object 'CustomerClassificationCalculator'.
+2013-03-04 18:45:33,497 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] -       GetObjectInternal: obtaining instance for name CustomerClassificationCalculator => canonical name CustomerClassificationCalculator
+2013-03-04 18:45:33,498 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Returning cached instance of singleton object 'CustomerClassificationCalculator'.
+2013-03-04 18:45:33,498 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Calling code asked for normal instance for name 'CustomerClassificationCalculator'.
+2013-03-04 18:45:33,499 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] -    GetObjectInternal: returning instance for objectname CustomerClassificationCalculator
+2013-03-04 18:45:33,499 [12] DEBUG Spring.Objects.Factory.Support.ConstructorResolver [(null)] - Object 'CustomerEntityProtoType' instantiated via constructor [Void .ctor(Spring.Northwind.Domain.ICustomerClassificationCalculator)].
+2013-03-04 18:45:33,500 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Configuring object using definition 'CustomerEntityProtoType'
+2013-03-04 18:45:33,500 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Invoking IObjectPostProcessors before initialization of object 'CustomerEntityProtoType'
+2013-03-04 18:45:33,501 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Invoking IObjectPostProcessors after initialization of object 'CustomerEntityProtoType'
+2013-03-04 18:45:33,501 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - GetObjectInternal: returning instance for objectname CustomerEntityProtoType
+2013-03-04 18:45:33,502 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] -    GetObjectInternal: obtaining instance for name CustomerEntityProtoType => canonical name CustomerEntityProtoType
+2013-03-04 18:45:33,502 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Creating instance of Object 'CustomerEntityProtoType' with merged definition [Root web object with class [Spring.Northwind.Domain.Customer] defined in assembly [Spring.Northwind.Dao.NHibernate, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null], resource [Spring.Northwind.Dao.Dao.xml] line 64].
+2013-03-04 18:45:33,503 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Invoking IInstantiationAwareObjectPostProcessors before the instantiation of 'CustomerEntityProtoType'.
+2013-03-04 18:45:33,503 [12] DEBUG Spring.Objects.Factory.Support.ObjectDefinitionValueResolver [(null)] - Resolving reference from property 'constructor argument' in object 'CustomerEntityProtoType' to object 'CustomerClassificationCalculator'.
+2013-03-04 18:45:33,504 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] -       GetObjectInternal: obtaining instance for name CustomerClassificationCalculator => canonical name CustomerClassificationCalculator
+2013-03-04 18:45:33,504 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Returning cached instance of singleton object 'CustomerClassificationCalculator'.
+2013-03-04 18:45:33,505 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Calling code asked for normal instance for name 'CustomerClassificationCalculator'.
+2013-03-04 18:45:33,505 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] -    GetObjectInternal: returning instance for objectname CustomerClassificationCalculator
+2013-03-04 18:45:33,506 [12] DEBUG Spring.Objects.Factory.Support.ConstructorResolver [(null)] - Object 'CustomerEntityProtoType' instantiated via constructor [Void .ctor(Spring.Northwind.Domain.ICustomerClassificationCalculator)].
+2013-03-04 18:45:33,507 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Configuring object using definition 'CustomerEntityProtoType'
+2013-03-04 18:45:33,507 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Invoking IObjectPostProcessors before initialization of object 'CustomerEntityProtoType'
+2013-03-04 18:45:33,507 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Invoking IObjectPostProcessors after initialization of object 'CustomerEntityProtoType'
+2013-03-04 18:45:33,508 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - GetObjectInternal: returning instance for objectname CustomerEntityProtoType
+2013-03-04 18:45:33,509 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] -    GetObjectInternal: obtaining instance for name CustomerEntityProtoType => canonical name CustomerEntityProtoType
+2013-03-04 18:45:33,509 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Creating instance of Object 'CustomerEntityProtoType' with merged definition [Root web object with class [Spring.Northwind.Domain.Customer] defined in assembly [Spring.Northwind.Dao.NHibernate, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null], resource [Spring.Northwind.Dao.Dao.xml] line 64].
+2013-03-04 18:45:33,509 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Invoking IInstantiationAwareObjectPostProcessors before the instantiation of 'CustomerEntityProtoType'.
+2013-03-04 18:45:33,510 [12] DEBUG Spring.Objects.Factory.Support.ObjectDefinitionValueResolver [(null)] - Resolving reference from property 'constructor argument' in object 'CustomerEntityProtoType' to object 'CustomerClassificationCalculator'.
+2013-03-04 18:45:33,510 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] -       GetObjectInternal: obtaining instance for name CustomerClassificationCalculator => canonical name CustomerClassificationCalculator
+2013-03-04 18:45:33,511 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Returning cached instance of singleton object 'CustomerClassificationCalculator'.
+2013-03-04 18:45:33,512 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Calling code asked for normal instance for name 'CustomerClassificationCalculator'.
+2013-03-04 18:45:33,512 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] -    GetObjectInternal: returning instance for objectname CustomerClassificationCalculator
+2013-03-04 18:45:33,513 [12] DEBUG Spring.Objects.Factory.Support.ConstructorResolver [(null)] - Object 'CustomerEntityProtoType' instantiated via constructor [Void .ctor(Spring.Northwind.Domain.ICustomerClassificationCalculator)].
+2013-03-04 18:45:33,513 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Configuring object using definition 'CustomerEntityProtoType'
+2013-03-04 18:45:33,514 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Invoking IObjectPostProcessors before initialization of object 'CustomerEntityProtoType'
+2013-03-04 18:45:33,514 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Invoking IObjectPostProcessors after initialization of object 'CustomerEntityProtoType'
+2013-03-04 18:45:33,515 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - GetObjectInternal: returning instance for objectname CustomerEntityProtoType
+2013-03-04 18:45:33,515 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] -    GetObjectInternal: obtaining instance for name CustomerEntityProtoType => canonical name CustomerEntityProtoType
+2013-03-04 18:45:33,516 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Creating instance of Object 'CustomerEntityProtoType' with merged definition [Root web object with class [Spring.Northwind.Domain.Customer] defined in assembly [Spring.Northwind.Dao.NHibernate, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null], resource [Spring.Northwind.Dao.Dao.xml] line 64].
+2013-03-04 18:45:33,516 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Invoking IInstantiationAwareObjectPostProcessors before the instantiation of 'CustomerEntityProtoType'.
+2013-03-04 18:45:33,517 [12] DEBUG Spring.Objects.Factory.Support.ObjectDefinitionValueResolver [(null)] - Resolving reference from property 'constructor argument' in object 'CustomerEntityProtoType' to object 'CustomerClassificationCalculator'.
+2013-03-04 18:45:33,517 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] -       GetObjectInternal: obtaining instance for name CustomerClassificationCalculator => canonical name CustomerClassificationCalculator
+2013-03-04 18:45:33,518 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Returning cached instance of singleton object 'CustomerClassificationCalculator'.
+2013-03-04 18:45:33,519 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Calling code asked for normal instance for name 'CustomerClassificationCalculator'.
+2013-03-04 18:45:33,519 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] -    GetObjectInternal: returning instance for objectname CustomerClassificationCalculator
+2013-03-04 18:45:33,520 [12] DEBUG Spring.Objects.Factory.Support.ConstructorResolver [(null)] - Object 'CustomerEntityProtoType' instantiated via constructor [Void .ctor(Spring.Northwind.Domain.ICustomerClassificationCalculator)].
+2013-03-04 18:45:33,520 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Configuring object using definition 'CustomerEntityProtoType'
+2013-03-04 18:45:33,521 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Invoking IObjectPostProcessors before initialization of object 'CustomerEntityProtoType'
+2013-03-04 18:45:33,521 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Invoking IObjectPostProcessors after initialization of object 'CustomerEntityProtoType'
+2013-03-04 18:45:33,522 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - GetObjectInternal: returning instance for objectname CustomerEntityProtoType
+2013-03-04 18:45:33,522 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] -    GetObjectInternal: obtaining instance for name CustomerEntityProtoType => canonical name CustomerEntityProtoType
+2013-03-04 18:45:33,523 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Creating instance of Object 'CustomerEntityProtoType' with merged definition [Root web object with class [Spring.Northwind.Domain.Customer] defined in assembly [Spring.Northwind.Dao.NHibernate, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null], resource [Spring.Northwind.Dao.Dao.xml] line 64].
+2013-03-04 18:45:33,523 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Invoking IInstantiationAwareObjectPostProcessors before the instantiation of 'CustomerEntityProtoType'.
+2013-03-04 18:45:33,524 [12] DEBUG Spring.Objects.Factory.Support.ObjectDefinitionValueResolver [(null)] - Resolving reference from property 'constructor argument' in object 'CustomerEntityProtoType' to object 'CustomerClassificationCalculator'.
+2013-03-04 18:45:33,524 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] -       GetObjectInternal: obtaining instance for name CustomerClassificationCalculator => canonical name CustomerClassificationCalculator
+2013-03-04 18:45:33,525 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Returning cached instance of singleton object 'CustomerClassificationCalculator'.
+2013-03-04 18:45:33,525 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Calling code asked for normal instance for name 'CustomerClassificationCalculator'.
+2013-03-04 18:45:33,526 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] -    GetObjectInternal: returning instance for objectname CustomerClassificationCalculator
+2013-03-04 18:45:33,526 [12] DEBUG Spring.Objects.Factory.Support.ConstructorResolver [(null)] - Object 'CustomerEntityProtoType' instantiated via constructor [Void .ctor(Spring.Northwind.Domain.ICustomerClassificationCalculator)].
+2013-03-04 18:45:33,527 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Configuring object using definition 'CustomerEntityProtoType'
+2013-03-04 18:45:33,527 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Invoking IObjectPostProcessors before initialization of object 'CustomerEntityProtoType'
+2013-03-04 18:45:33,528 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - Invoking IObjectPostProcessors after initialization of object 'CustomerEntityProtoType'
+2013-03-04 18:45:33,528 [12] DEBUG Spring.Objects.Factory.Support.WebObjectFactory [(null)] - GetObjectInternal: returning instance for objectname CustomerEntityProtoType
+2013-03-04 18:45:33,545 [12] DEBUG Spring.Transaction.Interceptor.TransactionAspectSupport [(null)] - Completing transaction for [CompositionAopProxy_942f9d777d90453b84b0447d5ad02b36.GetAll]
+2013-03-04 18:45:33,547 [12] DEBUG Spring.Data.NHibernate.HibernateTransactionManager [(null)] - Committing Hibernate transaction on Session [NHibernate.Impl.SessionImpl]
+2013-03-04 18:45:33,554 [12] DEBUG Spring.Transaction.Support.TransactionSynchronizationManager [(null)] - Removed value [Spring.Data.NHibernate.SessionHolder@4F33D5] for key [NHibernate.Impl.SessionFactoryImpl@382B429] from thread [12]
+2013-03-04 18:45:33,554 [12] DEBUG Spring.Transaction.Support.TransactionSynchronizationManager [(null)] - Removed value [Spring.Data.Support.ConnectionHolder@2F300FA] for key [Spring.Data.Common.DbProvider@1DE9989] from thread [12]
+2013-03-04 18:45:33,554 [12] DEBUG Spring.Data.NHibernate.HibernateTransactionManager [(null)] - Closing Hibernate Session [NHibernate.Impl.SessionImpl] after transaction
+2013-03-04 18:45:33,555 [12] DEBUG Spring.Data.NHibernate.SessionFactoryUtils [(null)] - Closing Hibernate Session
+2013-03-04 18:45:33,635 [12] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:34,681 [12] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:34,682 [12] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,292 [12] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,582 [23] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,582 [23] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,582 [21] DEBUG Spring.Context.Support.WebSupportModule [(null)] - Initializing Application instance
+2013-03-04 18:45:36,582 [21] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - looking up web context 'spring.root' in WebContextCache
+2013-03-04 18:45:36,583 [21] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - returning WebContextCache hit '[spring.root]:WebApplicationContext(2731733)' for vpath 'spring.root' 
+2013-03-04 18:45:36,583 [21] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,583 [21] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,584 [23] DEBUG Spring.Context.Support.WebSupportModule [(null)] - Initializing Application instance
+2013-03-04 18:45:36,584 [23] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - looking up web context 'spring.root' in WebContextCache
+2013-03-04 18:45:36,584 [23] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - returning WebContextCache hit '[spring.root]:WebApplicationContext(2731733)' for vpath 'spring.root' 
+2013-03-04 18:45:36,584 [23] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,585 [23] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,585 [21] DEBUG Spring.Context.Support.WebSupportModule [(null)] - Initializing Application instance
+2013-03-04 18:45:36,585 [23] DEBUG Spring.Context.Support.WebSupportModule [(null)] - Initializing Application instance
+2013-03-04 18:45:36,585 [21] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - looking up web context 'spring.root' in WebContextCache
+2013-03-04 18:45:36,586 [21] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - returning WebContextCache hit '[spring.root]:WebApplicationContext(2731733)' for vpath 'spring.root' 
+2013-03-04 18:45:36,586 [21] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,586 [21] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,587 [21] DEBUG Spring.Context.Support.WebSupportModule [(null)] - Initializing Application instance
+2013-03-04 18:45:36,588 [23] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - looking up web context 'spring.root' in WebContextCache
+2013-03-04 18:45:36,588 [23] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - returning WebContextCache hit '[spring.root]:WebApplicationContext(2731733)' for vpath 'spring.root' 
+2013-03-04 18:45:36,588 [23] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,588 [23] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,589 [21] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - looking up web context 'spring.root' in WebContextCache
+2013-03-04 18:45:36,590 [21] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - returning WebContextCache hit '[spring.root]:WebApplicationContext(2731733)' for vpath 'spring.root' 
+2013-03-04 18:45:36,590 [21] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,590 [21] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,595 [24] DEBUG Spring.Context.Support.WebSupportModule [(null)] - Initializing Application instance
+2013-03-04 18:45:36,595 [24] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - looking up web context 'spring.root' in WebContextCache
+2013-03-04 18:45:36,595 [24] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - returning WebContextCache hit '[spring.root]:WebApplicationContext(2731733)' for vpath 'spring.root' 
+2013-03-04 18:45:36,596 [24] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,628 [24] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,629 [24] DEBUG Spring.Context.Support.WebSupportModule [(null)] - Initializing Application instance
+2013-03-04 18:45:36,630 [24] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - looking up web context 'spring.root' in WebContextCache
+2013-03-04 18:45:36,630 [24] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - returning WebContextCache hit '[spring.root]:WebApplicationContext(2731733)' for vpath 'spring.root' 
+2013-03-04 18:45:36,630 [24] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,630 [24] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,631 [12] DEBUG Spring.Context.Support.WebSupportModule [(null)] - Initializing Application instance
+2013-03-04 18:45:36,631 [12] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - looking up web context 'spring.root' in WebContextCache
+2013-03-04 18:45:36,631 [12] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - returning WebContextCache hit '[spring.root]:WebApplicationContext(2731733)' for vpath 'spring.root' 
+2013-03-04 18:45:36,631 [24] DEBUG Spring.Context.Support.WebSupportModule [(null)] - Initializing Application instance
+2013-03-04 18:45:36,631 [24] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - looking up web context 'spring.root' in WebContextCache
+2013-03-04 18:45:36,632 [24] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - returning WebContextCache hit '[spring.root]:WebApplicationContext(2731733)' for vpath 'spring.root' 
+2013-03-04 18:45:36,632 [12] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,632 [12] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,633 [24] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,633 [24] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,633 [12] DEBUG Spring.Context.Support.WebSupportModule [(null)] - Initializing Application instance
+2013-03-04 18:45:36,634 [12] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - looking up web context 'spring.root' in WebContextCache
+2013-03-04 18:45:36,634 [12] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - returning WebContextCache hit '[spring.root]:WebApplicationContext(2731733)' for vpath 'spring.root' 
+2013-03-04 18:45:36,634 [12] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,634 [24] DEBUG Spring.Context.Support.WebSupportModule [(null)] - Initializing Application instance
+2013-03-04 18:45:36,634 [24] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - looking up web context 'spring.root' in WebContextCache
+2013-03-04 18:45:36,634 [24] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - returning WebContextCache hit '[spring.root]:WebApplicationContext(2731733)' for vpath 'spring.root' 
+2013-03-04 18:45:36,634 [12] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,635 [24] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,635 [24] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,635 [12] DEBUG Spring.Context.Support.WebSupportModule [(null)] - Initializing Application instance
+2013-03-04 18:45:36,635 [12] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - looking up web context 'spring.root' in WebContextCache
+2013-03-04 18:45:36,636 [12] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - returning WebContextCache hit '[spring.root]:WebApplicationContext(2731733)' for vpath 'spring.root' 
+2013-03-04 18:45:36,636 [24] DEBUG Spring.Context.Support.WebSupportModule [(null)] - Initializing Application instance
+2013-03-04 18:45:36,636 [12] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,636 [12] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,636 [24] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - looking up web context 'spring.root' in WebContextCache
+2013-03-04 18:45:36,636 [24] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - returning WebContextCache hit '[spring.root]:WebApplicationContext(2731733)' for vpath 'spring.root' 
+2013-03-04 18:45:36,637 [24] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,637 [24] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,637 [12] DEBUG Spring.Context.Support.WebSupportModule [(null)] - Initializing Application instance
+2013-03-04 18:45:36,637 [12] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - looking up web context 'spring.root' in WebContextCache
+2013-03-04 18:45:36,637 [12] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - returning WebContextCache hit '[spring.root]:WebApplicationContext(2731733)' for vpath 'spring.root' 
+2013-03-04 18:45:36,637 [12] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,638 [24] DEBUG Spring.Context.Support.WebSupportModule [(null)] - Initializing Application instance
+2013-03-04 18:45:36,638 [24] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - looking up web context 'spring.root' in WebContextCache
+2013-03-04 18:45:36,638 [12] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,638 [24] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - returning WebContextCache hit '[spring.root]:WebApplicationContext(2731733)' for vpath 'spring.root' 
+2013-03-04 18:45:36,638 [24] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,638 [24] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,639 [12] DEBUG Spring.Context.Support.WebSupportModule [(null)] - Initializing Application instance
+2013-03-04 18:45:36,639 [12] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - looking up web context 'spring.root' in WebContextCache
+2013-03-04 18:45:36,639 [12] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - returning WebContextCache hit '[spring.root]:WebApplicationContext(2731733)' for vpath 'spring.root' 
+2013-03-04 18:45:36,639 [12] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,639 [24] DEBUG Spring.Context.Support.WebSupportModule [(null)] - Initializing Application instance
+2013-03-04 18:45:36,639 [12] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,640 [24] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - looking up web context 'spring.root' in WebContextCache
+2013-03-04 18:45:36,640 [24] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - returning WebContextCache hit '[spring.root]:WebApplicationContext(2731733)' for vpath 'spring.root' 
+2013-03-04 18:45:36,640 [24] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,640 [24] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,640 [12] DEBUG Spring.Context.Support.WebSupportModule [(null)] - Initializing Application instance
+2013-03-04 18:45:36,641 [12] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - looking up web context 'spring.root' in WebContextCache
+2013-03-04 18:45:36,641 [12] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - returning WebContextCache hit '[spring.root]:WebApplicationContext(2731733)' for vpath 'spring.root' 
+2013-03-04 18:45:36,641 [12] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,641 [12] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,641 [24] DEBUG Spring.Context.Support.WebSupportModule [(null)] - Initializing Application instance
+2013-03-04 18:45:36,642 [24] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - looking up web context 'spring.root' in WebContextCache
+2013-03-04 18:45:36,642 [24] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - returning WebContextCache hit '[spring.root]:WebApplicationContext(2731733)' for vpath 'spring.root' 
+2013-03-04 18:45:36,642 [24] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,642 [24] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,643 [24] DEBUG Spring.Context.Support.WebSupportModule [(null)] - Initializing Application instance
+2013-03-04 18:45:36,643 [24] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - looking up web context 'spring.root' in WebContextCache
+2013-03-04 18:45:36,644 [12] DEBUG Spring.Context.Support.WebSupportModule [(null)] - Initializing Application instance
+2013-03-04 18:45:36,644 [24] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - returning WebContextCache hit '[spring.root]:WebApplicationContext(2731733)' for vpath 'spring.root' 
+2013-03-04 18:45:36,644 [12] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - looking up web context 'spring.root' in WebContextCache
+2013-03-04 18:45:36,644 [12] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - returning WebContextCache hit '[spring.root]:WebApplicationContext(2731733)' for vpath 'spring.root' 
+2013-03-04 18:45:36,644 [24] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,644 [24] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,645 [12] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,645 [12] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,645 [24] DEBUG Spring.Context.Support.WebSupportModule [(null)] - Initializing Application instance
+2013-03-04 18:45:36,645 [24] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - looking up web context 'spring.root' in WebContextCache
+2013-03-04 18:45:36,646 [24] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - returning WebContextCache hit '[spring.root]:WebApplicationContext(2731733)' for vpath 'spring.root' 
+2013-03-04 18:45:36,646 [12] DEBUG Spring.Context.Support.WebSupportModule [(null)] - Initializing Application instance
+2013-03-04 18:45:36,646 [12] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - looking up web context 'spring.root' in WebContextCache
+2013-03-04 18:45:36,646 [12] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - returning WebContextCache hit '[spring.root]:WebApplicationContext(2731733)' for vpath 'spring.root' 
+2013-03-04 18:45:36,646 [24] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,646 [24] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,647 [12] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,647 [12] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,648 [24] DEBUG Spring.Context.Support.WebSupportModule [(null)] - Initializing Application instance
+2013-03-04 18:45:36,648 [24] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - looking up web context 'spring.root' in WebContextCache
+2013-03-04 18:45:36,648 [24] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - returning WebContextCache hit '[spring.root]:WebApplicationContext(2731733)' for vpath 'spring.root' 
+2013-03-04 18:45:36,648 [12] DEBUG Spring.Context.Support.WebSupportModule [(null)] - Initializing Application instance
+2013-03-04 18:45:36,648 [24] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,649 [24] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,650 [24] DEBUG Spring.Context.Support.WebSupportModule [(null)] - Initializing Application instance
+2013-03-04 18:45:36,650 [24] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - looking up web context 'spring.root' in WebContextCache
+2013-03-04 18:45:36,650 [24] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - returning WebContextCache hit '[spring.root]:WebApplicationContext(2731733)' for vpath 'spring.root' 
+2013-03-04 18:45:36,650 [24] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,650 [24] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,651 [24] DEBUG Spring.Context.Support.WebSupportModule [(null)] - Initializing Application instance
+2013-03-04 18:45:36,651 [24] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - looking up web context 'spring.root' in WebContextCache
+2013-03-04 18:45:36,652 [24] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - returning WebContextCache hit '[spring.root]:WebApplicationContext(2731733)' for vpath 'spring.root' 
+2013-03-04 18:45:36,652 [24] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,652 [24] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,657 [12] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - looking up web context 'spring.root' in WebContextCache
+2013-03-04 18:45:36,657 [12] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - returning WebContextCache hit '[spring.root]:WebApplicationContext(2731733)' for vpath 'spring.root' 
+2013-03-04 18:45:36,657 [12] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,657 [12] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,659 [12] DEBUG Spring.Context.Support.WebSupportModule [(null)] - Initializing Application instance
+2013-03-04 18:45:36,659 [12] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - looking up web context 'spring.root' in WebContextCache
+2013-03-04 18:45:36,659 [12] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - returning WebContextCache hit '[spring.root]:WebApplicationContext(2731733)' for vpath 'spring.root' 
+2013-03-04 18:45:36,659 [12] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,659 [12] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,660 [12] DEBUG Spring.Context.Support.WebSupportModule [(null)] - Initializing Application instance
+2013-03-04 18:45:36,660 [12] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - looking up web context 'spring.root' in WebContextCache
+2013-03-04 18:45:36,661 [12] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - returning WebContextCache hit '[spring.root]:WebApplicationContext(2731733)' for vpath 'spring.root' 
+2013-03-04 18:45:36,661 [12] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,661 [12] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,662 [12] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,662 [12] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,663 [12] DEBUG Spring.Context.Support.WebSupportModule [(null)] - Initializing Application instance
+2013-03-04 18:45:36,664 [12] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - looking up web context 'spring.root' in WebContextCache
+2013-03-04 18:45:36,664 [12] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - returning WebContextCache hit '[spring.root]:WebApplicationContext(2731733)' for vpath 'spring.root' 
+2013-03-04 18:45:36,664 [12] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,664 [12] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,665 [12] DEBUG Spring.Context.Support.WebSupportModule [(null)] - Initializing Application instance
+2013-03-04 18:45:36,665 [12] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - looking up web context 'spring.root' in WebContextCache
+2013-03-04 18:45:36,665 [12] DEBUG Spring.Context.Support.WebApplicationContext [(null)] - returning WebContextCache hit '[spring.root]:WebApplicationContext(2731733)' for vpath 'spring.root' 
+2013-03-04 18:45:36,666 [12] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,666 [12] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,770 [24] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,771 [24] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,771 [24] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,772 [24] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,772 [24] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,772 [24] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,773 [24] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,773 [24] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,773 [24] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,773 [24] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,774 [24] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,774 [24] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,774 [24] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,774 [24] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,775 [24] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,775 [24] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,775 [24] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,776 [24] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,776 [24] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,776 [24] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,777 [24] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
+2013-03-04 18:45:36,777 [24] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context '[spring.root]:WebApplicationContext(2731733)' registered under name 'spring.root'.
